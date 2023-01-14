@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3: Tính diện tích hình vuông khi biết cạnh a.</title>
+</head>
+<body>
+<h1>
+    Tính diện tích hình vuông khi biết cạnh a.
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number"  id="canhA">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> tinhdientich</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let canha = document.getElementById("canhA").value;
+        let Multiplication1 = parseInt(canha) * parseInt(canha);
+        document.getElementById("ketqua").innerText= Multiplication1;}
+</script>
+</body>
+</html>

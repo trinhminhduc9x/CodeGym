@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai nhap</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài của mảng");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ: " + i + "của mảng");
+    }
+
+
+
+
+    []
+    ]
+    let a
+    let b
+    let arr1=[]
+    let arr2=[]
+    // document.write(arr)
+        if (arr.length%2==0)
+        {
+            a=arr.length/2;
+            for (let j = 0; j< a; j++)
+            {
+                arr1.push(arr[j])
+
+         }
+            document.write("<br>"+ arr1 )
+            for (let k = a; k< arr.length; k++)
+            {
+                arr2.push(arr[k])
+                // document.write()
+
+            }
+            document.write("<br>" + arr2)
+        }
+    else {
+            b=(arr.length-1)/2;
+            for (let j = 0; j< b; j++)
+            {
+                arr1.push(arr[j])
+
+            }
+            document.write("<br>"+ arr1 )
+            for (let k = b; k< arr.length; k++)
+            {
+                arr2.push(arr[k])
+                // document.write()
+
+            }
+            document.write("<br>" + arr2)
+
+        }
+
+    // document.write("<br>"+ " chuoi moi laf "+ arr)
+</script>
+</body>
+</html>

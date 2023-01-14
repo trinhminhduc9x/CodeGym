@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiem tra so nguyen to</title>
+</head>
+<body>
+<script>
+    function  isPrime(number) {
+        // let count = 0;
+        // for (let i=2; i> number;i++){
+        //     for ( let j= 1; j<i; j++){
+        //         if (i%j==0){
+        //             count++
+        //         }
+        //     }if (count==2){
+        //         document.write(" so nguyen to la" + i+ "<br>")
+        //     }
+        // }}
+
+
+        //         let result
+        //         let count = 0;
+        //         for (let i=2; i<=number;i++){
+        //             for ( let j= 1; j<=i; j++){
+        //                 if (i%j==0){
+        //                     count++
+        //                 }
+        //             }if (count==2)
+        //             {
+        //                 result =i
+        //             }
+        //             count=0
+        //     }
+        // if (result==number){
+        //     document.write( number + " là số nguyên tố ")
+        // } else {
+        //     document.write( number + " không phải là số nguyên tố ")
+        // }
+        // }
+        //
+
+        let count = 0;
+        if (number > 2) {
+            for (let j = 1; j <= number; j++) {
+                if (number % j == 0) {
+                    count++
+                }
+            }
+            if (count == 2)
+            {
+                document.write(number + " là số nguyên tố ")
+            } else {
+                document.write(number + " không phải là số nguyên tố ")
+            }
+        }
+
+    }
+    let number = prompt(" nhap so nguyen to can tim")
+   isPrime(number)
+</script>
+</body>
+</html>

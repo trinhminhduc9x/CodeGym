@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Game đơn giản - di chuyển đối tượng</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+    function Hero(image, top, left, size,speed, right)
+    {
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.right = right;
+        this.size = size;
+        this.speed=speed;
+
+        this.getHeroElement = function(){
+            return '<img width="'+ this.size + '"' +
+                ' height="'+ this.size + '"' +
+                ' src="' + this.image +'"' +
+                ' style="top: '+this.top+'px; left:'+this.left+'px;right:'+this.right+'px; position:absolute;" />';
+        }
+
+        this.moveRight = function(){
+            this.left += this.speed;
+        }
+        this.moveLeft = function(){
+            this.right =1000- this.speed;
+        }
+    }
+    let hero = new Hero('https://aokieudep.com/wp-content/uploads/2020/06/1591183775-mo-hinh-dragonball-tuyen-mo-hinh-bay-vien-ngoc-rong.png',60, 60, 200,100,60);
+    function start1(){
+
+        if(hero.left < 1000){
+            hero.moveRight();
+        }else {
+            hero.moveLeft();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start1, 200)
+    }
+    start1()
+</script>
+</body>
+</html>

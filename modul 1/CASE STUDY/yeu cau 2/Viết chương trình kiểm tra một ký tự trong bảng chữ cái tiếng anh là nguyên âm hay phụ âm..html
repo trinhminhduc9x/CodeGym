@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 2</title>
+</head>
+<body>
+<script>
+    let characters=prompt(" nhập ký tự cần kiểm tra ");
+    let arr=['o','u','i','a','e','O','U','I','A','E'];
+    let count = 0;
+    for (let i=0;i<arr.length;i++)
+    {
+        if (characters==arr[i]){
+            count++;
+        }
+    }
+    if (count>0){
+        document.write("ký tự thuộc bảng nguyên âm ");
+    }else {
+        document.write("ký tự không thuộc bảng nguyên âm ");
+    }
+
+</script>
+</body>
+</html>

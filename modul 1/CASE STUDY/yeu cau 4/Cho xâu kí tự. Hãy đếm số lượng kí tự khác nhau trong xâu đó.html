@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let String= "trinhminhduc"//"cabca"  ; // "cabca"       //"trinhminhduc"//9 ký tự khác nhau
+    let arrStr =String.split("");
+    let count = 0 ;
+    let arr=[];
+    console.log(arrStr);
+    for (let i = 0; i <arrStr.length ; i++) {
+        for (let j = i+1; j <arrStr.length ; j++) {
+            if (arrStr[i]!=arrStr[j]){
+                count = count
+            }else {
+                arrStr[j]="";
+            }
+        }
+        if (arrStr[i]!==""){
+            arr.push(arrStr[i])
+        }
+    }
+    document.write( " có "+ arr.length +" phần từ khác nhau là " + arr)
+    console.log(arrStr);
+    console.log(arr);
+</script>
+</body>
+</html>

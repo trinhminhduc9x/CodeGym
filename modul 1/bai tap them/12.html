@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > tạo bảng tính  </button>
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+</table>
+<script>
+    let check_row = parseInt(prompt(" nhập số hàng"));
+    // let check_columns = parseInt(prompt(" nhập số cội"));
+
+function check_result() {
+    let table;
+    table= " <table>";
+    for (let i = 1 ; i<=check_row; i++)
+    {
+        table = table+ "<tr>" ;
+        table = table + "<td>" + "Nhập vào số nguyên" + "</td>";
+        table = table + "<td>" + '<input type="text" id= number' + i + '>';
+        table=table+"</tr>" ;
+    }
+    table=table+"</table>"
+    document.write(table);
+    document.write(
+         " <table>"
+        + "<tr>"
+        + "<td>"
+        + '<button type="button" onclick="check_result1()" >'+ "số bé nhất là" +'</button>'
+        + "</td>"
+        + "<td>"
+        + "<p id='result1'>"+"kết quả"+"</p>"
+        + "</td>"
+        + "</tr>"
+        + "</table>");
+}
+    // function check_result1() {
+    //     number1=document.getElementById("number1").value;
+    //     number2=document.getElementById("number2").value;
+    //     number3=document.getElementById("number3").value;
+    //     let arr = [number1,number2,number3]
+    //     let min = arr[0];
+    //     for (let i = 0; i < arr.length; i++){
+    //         if (arr[i]<=min){
+    //             min = arr[i]
+    //         }
+    //     }
+    //     document.getElementById('result1').innerText=" số nhỏ nhất là " + min;
+    //
+    // }
+
+    function check_result1() {
+        let number=0;
+        let arr = [];
+        for (let i = 1; i<=check_row; i++){
+            number=document.getElementById("number" +i ).value;
+            arr[i-1]=parseInt(number);
+        }
+        console.log(arr)
+        let min = arr[0];
+        for (let j=0; j<arr.length;j++){
+
+            if (arr[j]<min){
+                min = arr[j]
+            }
+        }
+        document.getElementById('result1').innerText=" số nhỏ nhất là " + min;
+    }
+
+
+</script>
+</body>
+</html>

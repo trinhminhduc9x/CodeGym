@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Câu lệnh switch-case</title>
+</head>
+<body>
+<div>
+    <h1>Kiểm tra số lãi trong năm </h1>
+    <table>
+        <tr>
+            <th>
+             tháng 1 lãi 1%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 2 lãi 2%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 3 lãi 3%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 4 lãi 4%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 5 lãi 5%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 6 lãi 6%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 7 lãi 7%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 8 lãi 8%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 9 lãi 9%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 10 lãi 10%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 11 lãi 11%
+            </th>
+        </tr>
+        <tr>
+            <th>
+                tháng 12 lãi 12%
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <input min="1" max="12"  type="number" id="thang" >
+            </th>
+            <th>
+                <button  onclick="tinhSolai()">Tính SỐ lãi trong tháng</button>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <input min="0" max="10000"  type="number" id="sotien" >
+            </th>
+            <th>
+                <button  onclick="soTien()">So tien nhap vao</button>
+            </th>
+        </tr>
+
+        <tr>
+            <th id="ketqua">
+                ĐÂY LÀ CHỖ HIỆN THỊ KẾT QUẢ
+            </th>
+        </tr>
+        <script>
+            function tinhSolai() {
+                let  sothang = document.getElementById("thang").value;
+                let  sotien = document.getElementById("sotien").value;
+                let tienlai
+                switch (sothang) {
+                    case "1" :
+                       tienlai = parseInt(sotien) * 1/100;
+                        break;
+                    case "2":
+                        tienlai = parseInt(sotien) * 2/100;
+                        break;
+                    case "3":
+                        tienlai = parseInt(sotien) * 3/100;
+                        break;
+                    case "4":
+                        tienlai = parseInt(sotien) * 4/100;
+                        break;
+                    case "5":
+                        tienlai = parseInt(sotien) * 5/100;
+                        break;
+                    case "6":
+                        tienlai = parseInt(sotien) * 6/100;
+                        break;
+                    case "7":
+                        tienlai = parseInt(sotien) * 7/100;
+                        break;
+                    case "8":
+                        tienlai = parseInt(sotien) * 8/100;
+                        break;
+                    case "9":
+                        tienlai = parseInt(sotien) * 9/100;
+                        break;
+                    case "10":
+                        tienlai = parseInt(sotien) * 10/100;
+                        break;
+                    case "11":
+                        tienlai = parseInt(sotien) * 11/100;
+                        break;
+                    case "12":
+                        tienlai = parseInt(sotien) * 12/100;
+                        break;
+                    default:
+                        document.getElementById("ketqua").innerHTML = "khong dung cu phap";
+                }document.getElementById("ketqua").innerHTML = tienlai;
+            }
+        </script>
+    </table>
+</div>
+</body>
+</html>

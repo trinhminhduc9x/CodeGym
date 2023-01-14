@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bt 1</title>
+</head>
+<body>
+<canvas id="DemoCanvas" width="500" height="600"></canvas>
+<script>
+    class Rectangle{
+        constructor(length,width) {
+            this.length= length ;
+            this.width= width ;
+        }
+        getLength(){
+            return this.length;
+        }
+        getWidth(){
+            return this.width;
+        }
+        setlength(length) {
+            this.length  = length;
+        }
+        setWidth(width) {
+            this.width  = width ;
+        }
+        getArea() {
+            return this.width*this.length;
+        }
+        getPerimeter() {
+            return (this.width+this.length)*2;
+        }
+    }
+    function getRandomHex(){
+        return Math.floor(Math.random()*500);
+    }
+    function getRandomColor(){
+        var red = getRandomHex();
+        var green = getRandomHex();
+        var blue = getRandomHex();
+        return "rgb(" + red + "," + blue + "," + green +")";
+    }
+    var rectangle = new Rectangle(4,2);
+    rectangle.setlength(10)
+    rectangle.setWidth(20)
+    let length = rectangle.getLength();
+    let width = rectangle.getWidth();
+    let perimeter= rectangle.getPerimeter();
+    let area =  rectangle.getArea();
+    document.write("chiều dài hình chữ nhật là : " + length )
+    document.write("chiều rộng hình chữ nhật là : " + width )
+    document.write("diện tích hình chữ nhật là : " + area )
+    document.write("chu vi hình chữ nhật là : " + perimeter)
+    var color = getRandomColor();
+    let canvas = document.getElementById("DemoCanvas");
+    let ctx = canvas.getContext('2d');
+    ctx.fillStyle= color ;
+    ctx.fillRect(10, 10, width*10, length*10);
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài của mảng");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ: " + i + "của mảng");
+    }
+    document.write(arr)
+    let number= prompt(" nhap so nguyen bat ky ")
+    for (let i = 0; i < arr.length; i++) {
+                if (number%2==0) {
+                    if (arr[i]%2==0){
+
+                    }else {
+                        arr[i]++
+                    }
+                }else
+                    if (arr[i]%2==0){
+                        arr[i]++
+                    }
+            }
+   document.write("<br>"+ " ham thay doi khi nhap so "+number +" la ham "+ arr)
+</script>
+</body>
+</html>

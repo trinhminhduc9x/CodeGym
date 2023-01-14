@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise3</title>
+</head>
+<body>
+<script>
+// let number = parseInt(prompt(" enter your number"))
+// let count  = 0;
+//     let n1=0;
+//     let n2=1;
+//     let n3 ;
+//     for (n1; n1 < 100; n1)
+//         { count = n1++;
+//             if ( count< number)
+//             {
+//                     n3 = --n1 + n2;
+//                     n1 = n2;
+//                     n2 = n3;
+//                     document.write(n1 + " <br>");
+//             }
+//         }
+
+// let number = parseInt(prompt(" enter your number"))
+// let count  = 0;
+// let n1=0;
+// let n2=1;
+// let n3 ;
+// for (n1; n1 < number; n1)
+// {
+//         n3 = n1 + n2;
+//         n1 = n2;
+//         n2 = n3;
+//         count= count+1;
+//     document.write(count + " <br>");
+//
+// }
+
+let n1 = 0;
+let n2 = 1;
+let n3 = n1+n2;
+let number = parseInt(prompt(" nhap so lan muon in ra"));
+for ( let i =0 ;i<number;i++)
+{
+    if(i==0||i==1) {
+        document.write(i + "<br>");
+    } else {
+        document.write(n3 + " <br>");
+        n1=n2;
+        n2=n3;
+        n3=n1+n2;
+
+    }
+
+}
+
+
+
+// let a
+// for ( let n1 =0; n1< 20;n1 ++ ){
+// //    a += n1;
+//     document.write(n1);
+// }
+// let number = parseInt(prompt(" enter your number"));
+// let a  = 0;
+// let countTest ;
+// // if ( countTest< number){
+// for (a;a < number; a++)
+// {   countTest=a;
+//     document.write(countTest);
+// }
+//         // } }
+
+
+// let n1 = 0;
+// let n2 = 1;
+// let n3;
+// for ( n1;n1<20;n1)
+// {
+//     n3=n1+n2;
+//     n1=n2;
+//     n2=n3;
+//     document.write(n3);
+// }
+
+
+
+</script>
+</body>
+</html>

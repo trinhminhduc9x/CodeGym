@@ -1,0 +1,32 @@
+<p id="menu"></p>
+<button type="button" id="click" onclick="chonMon()">CHỌN</button>
+<script>
+    let menu = ["Cafe", "Cam Vắt", "Nước Ép Cà Rốt", "Nước Ép cà chua", "Nước lọc", "Nước Dừa", "thoát gọi món"]
+    let stt = [1, 2, 3, 4, 5, 6, 7]
+    let primes = [45000, 50000, 30000, 25000, 10000, 50000]
+    for (let i = 0; i < menu.length; i++) {
+        document.getElementById('menu').innerHTML += (i + 1) + "." + menu[i] + "<br>"
+    }
+
+    function chonMon() {
+        let sum=0;
+        let intnum=0
+        do {
+            intnum = +prompt("Nhập số bạn chọn")
+            if (intnum>7){
+                alert("Món bạn chọn không có trong menu")
+            }else if (intnum == 7) {
+                alert("Tổng tiền là : "+sum)
+                break;
+            }else {
+                for (let i = 0; i < primes.length; i++) {
+                    if (intnum == (i + 1)) {
+                        alert("Giá tiền" + primes[i])
+                        let sl = +prompt("Số lượng muốn mua:")
+                        sum += primes[i] * sl;
+                    }
+                }
+            }
+
+        } while (intnum <= 7)
+    }

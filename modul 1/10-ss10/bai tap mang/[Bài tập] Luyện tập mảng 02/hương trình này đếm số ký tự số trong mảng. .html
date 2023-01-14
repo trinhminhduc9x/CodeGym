@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let str = prompt(" nham chuoi can tim ")
+    let arrStr = [];
+    let count = 0;
+    for ( let i=0; i<str; i++)
+    {
+        arrStr = prompt(" nhap phan tu mang")
+        if (arrStr[i]%arrStr[i]==0)
+        {
+            count++;
+        }
+    }
+document.write( " mang la " + arrStr  )
+    document.write( " <br>  trong mang co" +  count  " ky tu")
+</script>
+</body>
+</html>

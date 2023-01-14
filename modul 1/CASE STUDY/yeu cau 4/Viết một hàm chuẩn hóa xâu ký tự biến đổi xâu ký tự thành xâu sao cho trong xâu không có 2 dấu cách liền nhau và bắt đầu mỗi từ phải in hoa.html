@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+let suauKytu=prompt("nhập chuỗi bất kỳ");
+let arr = suauKytu.split(" ");
+let arrA ;
+let a;
+let arrB =[];
+let b;
+let arrC =[];
+let c;
+let count = 0;
+for (let i = 0; i <arr.length ; i++) {
+     arrA = arr[i].split("");
+    for (let j = 0; j <arrA.length ; j++) {
+        if ( j===0){
+            a=arrA[0].toUpperCase()
+            arrB.push(a)
+        }else {
+            a=arrA[j].toLowerCase();
+            arrB.push(a)
+        }
+    }
+ b= arrB.join("")
+    arrB=[]
+    arrC.push(b)
+}
+ c= arrC.join(" ")
+document.write(c)
+
+</script>
+</body>
+</html>

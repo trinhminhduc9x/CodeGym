@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    let row =prompt(" nhap vao so hang")
+    let column =prompt(" nhap vao so cot")
+    let Arr =[];
+    let sum=0;
+    for (let i = 0; i <row ; i++) {
+        Arr[i]=[];
+        for (let j = 0; j <column ; j++) {
+            Arr[i][j]=prompt(" nhap ham")
+            if ((Arr[i][j])%2==0){
+                sum+= parseInt(Arr[i][j]);
+            }
+        }
+    }
+    document.write(sum+"<br>")
+    document.write(Arr)
+</script>
+</body>
+</html>

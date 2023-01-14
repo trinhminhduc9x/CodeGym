@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let element = prompt("nhap vao cac tu");
+    // let x = 0;
+    // let array = Array(element);
+
+
+    // let num = prompt("enter you number");
+    // let arr = Array.from(num);
+    // let newArr = []
+    // console.log(arr);
+    // for (var x = 1; x < arr.length; x++)
+    // {
+    //     if (arr[x - 1] % 2 === 0 && arr[x] % 2 === 0) {
+    //         new.push('-', str[x]);
+    //     }
+    // }document.write(arr.join("-"));
+
+
+
+
+    var num = prompt("nhap vao chuoi so");
+    var str = num.toString();
+    var result = [str[0]];
+    for (var x = 1; x < str.length; x++)
+    {
+        if (  str[x] % 2 === 0)
+        {
+            result.push('-', str[x]);
+        } else
+            {
+            result.push(str[x]);
+        }
+    }
+    document.write(result.join('  '));
+</script>
+</body>
+</html>

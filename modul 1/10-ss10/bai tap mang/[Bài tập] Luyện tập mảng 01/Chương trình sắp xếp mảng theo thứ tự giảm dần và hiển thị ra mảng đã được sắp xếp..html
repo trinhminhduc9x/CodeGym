@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+<script>
+    //[523,42,3,4,5,3,2,32]
+    // [1 2 3 4 5 6]
+    let str = prompt("enter you  ten number");
+    let arrStr = str.split("");
+
+    for (let i = 0; i < arrStr.length-1; i++) {
+        for (let j = i + 1; j < arrStr.length; j++) {
+            if (arrStr[j] > arrStr[i]) {
+                let first = arrStr[i]
+                arrStr[i] = arrStr[j];
+                arrStr[j] = first;
+            }
+        }
+    }
+    document.write(arrStr)
+
+
+    //  let str = prompt("enter you  ten number");
+    //  let arrStr = str.split(" ");
+    //  let first = 0;
+    //  let last = arrStr.length - 1;
+    //  let b = arrStr[first];
+    // for (let i = 0;i< arrStr.length; i++ )
+    // {
+    //    for (let j = 0; j< arrStr.length; j++)
+    //    {
+    //        if (arrStr[j]>arrStr[i])
+    //        {
+    //            result= arrStr[j]
+    //        }
+    //        arrStr[first]= result;
+    //        result= b;
+    //        first++;
+    //        last--;
+    //    }
+    //    arrStr[first]= result;
+    //     result= b;
+    //     first++;
+    //     last--;
+    // } console.log(arrStr)
+
+
+    //
+    // //console.log(arrStr)
+    // let first = 0;
+    // let last = arrStr.length - 1;
+    // //8 so
+    //
+    // for (let i = 0 ;i< last; i++)
+    //     // while (first<last)
+    // {
+    //     let b = arrStr[first];
+    //     arrStr[first]= arrStr[last];
+    //     arrStr[last]= b;
+    //     first++;
+    //     last--;
+    // }
+    // console.log(arrStr)
+    // document.write(arrStr)
+    //
+
+
+    // for (let i = 0; i< arrStr.length;i++)
+    // {
+    //     if (arrStr[i] == search )
+    //     {
+    //         arrStr.splice(i,1)
+    //         arrStr.push(0)
+    //         // console.log(arrStr)
+    //     }
+    // }
+
+</script>
+</body>
+</html>

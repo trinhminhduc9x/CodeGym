@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="numberA">
+<input type="text" id="numberB">
+<p id="result">0</p>
+<button onclick="sum()" onmouseout="over()">Sum</button>
+
+<script>
+    function sum(){
+        let a = document.getElementById("numberA").value;
+        let b = document.getElementById("numberB").value;
+        let sum = parseInt(a) + parseInt(b);
+        console.log("ket qua la: " + sum); //F12
+        document.getElementById("result").innerText = sum;
+    }
+
+    function over() {
+        alert("onmouseover");
+    }
+
+</script>
+</body>
+</html>

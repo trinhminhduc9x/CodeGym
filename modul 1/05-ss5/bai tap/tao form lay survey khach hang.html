@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survey khách hàng</title>
+</head>
+<style>
+    #abc{
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    td, th {
+        text-align: left;
+        padding: 8px;
+    }
+    #abc tr:nth-child(odd) {
+        background-color: #dddddd;
+    }
+</style>
+<body>
+<form>
+    <table>
+        <h1>Market Research</h1>
+        <p>Please take a few moments to complete this satisfaction survey</p>
+    </table>
+    <hr>
+    <table>
+        <h2>What is your age range?</h2>
+        <select style="width: 20%">
+            <option>18-24</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+        </select>
+    </table>
+    <table>
+        <h2>What is your yearly income range?</h2>
+        <select style="width: 20%">
+            <option>$0-$25,000</option>
+            <option>$25,001-$50,000</option>
+            <option>$50,001-$100,000</option>
+            <option>$100+</option>
+        </select>
+    </table>
+    <table>
+        <h2>Gender Identity</h2>
+        <input type="radio" name="rd"/> Male <br/>
+        <input type="radio" name="rd"/> Female <br/>
+        <input type="radio" name="rd"/> Nonbinary <br/>
+        <input type="radio" name="rd"/> other <br/>
+        <input type="text"><br/>
+        <p>Maximum of 250 characters. Currently Used: 0 characters.</p>
+    </table>
+    <table>
+        <h2>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h2>
+        <input type="checkbox" name="stt"> Product 1 <br/>
+        <input type="checkbox" name="stt"> Product 2 <br/>
+        <input type="checkbox" name="stt"> Product 3 <br/>
+    </table>
+    <table>
+        <h2>How often would you use our new product?</h2>
+        <input type="radio" name="tg"/> Daily <br/>
+        <input type="radio" name="tg"/> Weekly <br/>
+        <input type="radio" name="tg"/> Monthly <br/>
+    </table>
+    <h2>What would you pay for the new product?</h2>
+    <table>
+        <tr>
+            <th>$</th>
+            <td>
+                <input type="text"><br/>
+            </td>
+
+            <th>.</th>
+            <td>
+                <input type="text">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Dollars</td>
+            <td></td>
+            <td>Cents</td>
+        </tr>
+    </table>
+    <table>
+        <h2>What features would you like to see in the new product.</h2>
+        <td><textarea></textarea></td>
+    </table>
+    <h2>Please rate your level of agreement with the following statements.</h2>
+    <table border="10" id="abc">
+        <tr>
+            <td></td>
+            <th>Strongly Disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly Agree</th>
+        </tr>
+        <tr>
+            <th>Our products are priced fairly.</th>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>1</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>2</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>3</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>4</br></td>
+        </tr>
+        <tr>
+            <th>Our products are high quality.</th>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>1</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>2</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>3</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>4</br></td>
+        </tr>
+        <tr>
+            <th>You would recommend our product to a friend or coworker.</th>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>1</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>2</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>3</br></td>
+            <td style="text-align: center"><input type="radio" name="stt"> <br>4</br></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td><input type="submit" name="submit" value="submit"></td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện.</title>
+</head>
+<body>
+<h1>
+    Tính gia dien
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number" max="1000" min="0" id="tienDien">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> số tiền điện đã sử dụng</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <p>
+            tren 100 KW tang tien dien len 2834 dong / KW
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 100 KW tang tien dien len 2536 dong / KW
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 50 KW dươi 100 KW tang tien dien len 2014 dong / KW
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 50 KW tang tien dien len 1734 / KW
+        </p>
+    </tr>
+    <tr>
+        <p>
+            dươi 50 KW tang tien dien len 1678 dong / KW
+        </p>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let hoahong = document.getElementById("tienDien").value;
+        let ketqua;
+        if (hoahong>400){
+            ketqua= (parseInt(hoahong)*2834);
+        }else if (hoahong>300) {
+            ketqua = (parseInt(hoahong)*2536);
+        } else  if ( hoahong> 200){
+            ketqua=(parseInt(hoahong)*2014);
+        } else  if ( hoahong> 100){
+            ketqua=(parseInt(hoahong)*1734);
+        } else {
+            ketqua=parseInt(hoahong)*1678;
+        }
+        document.getElementById("ketqua").innerText = parseFloat(ketqua);
+
+    }
+</script>
+</body>
+</html>

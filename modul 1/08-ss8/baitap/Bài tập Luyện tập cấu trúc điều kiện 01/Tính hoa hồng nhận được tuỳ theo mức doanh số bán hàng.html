@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</title>
+</head>
+<body>
+<h1>
+    Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number" max="1000" min="100" id="hoaHong">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> so hoa hong</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <p>
+            tren 400 tr hoa hong 50 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 300 tr hoa hong 40 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 200 tr hoa hong 30 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 100 tr hoa hong 20 %
+        </p>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+let hoahong = document.getElementById("hoaHong").value;
+let ketqua;
+        if (hoahong>400){
+            ketqua=" hoa hoang 50 %";
+        }else if (hoahong>300) {
+            ketqua = " hoa hoang 40 %";
+        } else  if ( hoahong> 200){
+            ketqua=" hoa hoang 30 %";
+        } else {
+            ketqua="hoa hoang 20 %";
+        }
+        document.getElementById("ketqua").innerText = ketqua;
+    }
+</script>
+</body>
+</html>

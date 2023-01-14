@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 1.</title>
+</head>
+<body>
+<h1>
+    Giải phương trình bậc 1 có dạng Ax + B = 0
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number"  id="A">
+        <th>
+            <input type="number"  id="B">
+        </th>
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> tinhdientich</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p  > nhap A</p>
+        </th>
+        <th>
+            <p>
+               nhap B
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua x o day
+            </p>
+        </th>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let a = document.getElementById("A").value;
+        let b = document.getElementById("B").value;
+        let Multiplication1 = (- parseInt(b) / parseInt(a));
+        document.getElementById("ketqua").innerText= Multiplication1;}
+</script>
+</body>
+</html>

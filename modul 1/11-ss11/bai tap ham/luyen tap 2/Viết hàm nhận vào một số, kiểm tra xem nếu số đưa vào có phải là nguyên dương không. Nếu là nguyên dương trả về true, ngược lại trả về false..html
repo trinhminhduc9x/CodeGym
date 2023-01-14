@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<table>
+    <tr>
+
+        <td>
+            <button type="button" onclick="check_result()" > Kiểm tra số nguyên dương</button>
+        </td>
+        <td>
+            <input type="number" id="number">
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+</table>
+<script>
+    function check_result() {
+       number=document.getElementById("number").value;
+        if (number>0){
+            document.write("true")
+        } else if (number==0) {
+            document.write("0")
+        }else{
+            document.write("false")
+        }
+    }
+</script>
+</body>
+</html>

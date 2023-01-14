@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhập vào 3 số nguyên bất kỳ
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập vào số nguyên thứ nhất
+        </td>
+        <td>
+            <input type="number" id="text1">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập vào số nguyên thứ hai
+        </td>
+        <td>
+            <input type="number" id="text2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Nhập vào số nguyên thứ ba
+        </td>
+        <td>
+            <input type="number" id="text3">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > Kiểm tra ký tự nhỏ nhất</button>
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+</table>
+<script>
+
+    function check_result() {
+        number1=document.getElementById("text1").value;
+        number2=document.getElementById("text2").value;
+        number3=document.getElementById("text3").value;
+        let arr = [number1,number2,number3]
+        console.log(arr)
+        // if (number1>number2&&number2>number3) {
+        //     document.getElementById("result").innerText=" số nhỏ nhất là " + number3;
+        // }else if (number2>number3&&number3>number1) {
+        //     document.getElementById("result").innerText=" số nhỏ nhất là " + number1;
+        // }else if (number3>number1&&number1>number2) {
+        //     document.getElementById("result").innerText=" số nhỏ nhất là " + number2;
+        // }
+
+        // if (number1>number2){
+        //         if (number2>number3){
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number3;
+        //     }else if (number3>=number2) {
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number2;
+        //     }
+        // }else
+        //
+        // if (number2 > number1){
+        //     if (number1> number3){
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number3;
+        //     }else if (number3 >= number1) {
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number1;
+        //     }
+        // }
+        // else
+        // if (number3 > number2){
+        //         if (number2>number1){
+        //             document.getElementById("result").innerText=" số nhỏ nhất là " + number1;
+        //         }else if (number1 >= number2) {
+        //             document.getElementById("result").innerText=" số nhỏ nhất là " + number2;
+        //         }
+        //     }
+        // else
+        // if (number2 > number3){
+        //     if (number3>number1){
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number1;
+        //     }else if (number1 >= number3) {
+        //         document.getElementById("result").innerText=" số nhỏ nhất là " + number3;
+        //     }
+        // } else {
+        //     document.getElementById("result").innerText=" số nhỏ nhất là " + number3;
+        // }
+
+
+        //
+
+        let count = 0;
+        for (let i = 0; i < arr.length; i++){
+            for (let j = 0; j <arr.length; j++){
+                if (arr[i]<=arr[j]){
+                   count++
+                }
+            }
+            if (count==arr.length){
+                document.getElementById("result").innerText=" số nhỏ nhất là " + arr[i];
+            }
+            count=0;
+        }
+    }
+
+
+    // for (let i = 0; i < arr.length; i++){
+    //         if (arr[i]<=arr[0]&&arr[i]<=arr[1]&&arr[i]<=arr[2]){
+    //             document.getElementById("result").innerText=" số nhỏ nhất là " + arr[i];
+    //         }
+    //     }
+    // }
+
+</script>
+</body>
+</html>

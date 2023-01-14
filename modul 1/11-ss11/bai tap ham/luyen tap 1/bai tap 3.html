@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+
+<button type="button" onclick="twoNumber()">kich vao </button>
+<p id="sum">0</p>
+<script>
+    function twoNumber(x, y) {
+x = parseInt(prompt("nhập số thứ nhất"))
+        y = parseInt(prompt("nhập số thứ nhất"))
+        if (x>y){
+            alert(" thông báo cho người dùng")
+        }else {
+            let sum = x +y
+            alert(" tổng hai số là  "+ sum)
+            document.getElementById("sum").innerText= "tổng hai số là  " + sum ;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

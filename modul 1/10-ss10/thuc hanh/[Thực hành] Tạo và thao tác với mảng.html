@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice 1</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <h1>
+            Sample Screen :
+        </h1>
+    </tr>
+    <tr>
+        <th>
+            <input type="text" id="value">
+        </th>
+        <th>
+            <button id="add" type="button" onclick="add()" > Add</button>
+        </th>
+        <th>
+            <button id="display" type="button" onclick="display()" >Display</button>
+        </th>
+    </tr>
+<p id="result"></p>
+</table>
+<hr>
+<script>
+    let x = 0;
+    let array = Array ();
+function add(){
+    array[x]= document.getElementById("value").value;
+    alert("Elenment " + array[x] + " added at index" + x );
+    x++;
+    document.getElementById("add()").value="";
+}
+function display() {
+    let e= "<hr/>";
+    for (let i = 0; i< array.length; i++){
+        e += "Element " + i + " = " + array[i] + "<br/>";
+    }
+document.getElementById("result").innerHTML=e
+}
+</script>
+</body>
+</html>

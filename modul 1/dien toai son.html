@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>class phone</title>
+    <style>
+        td{
+            background-color: deeppink;
+        }
+        th{
+            background-color: lawngreen;
+        }
+        table{
+            width: 500px;
+            text-align: center;
+            child-align: middle;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<h1>menu smart phone</h1>
+<div id="display"></div>
+<br>
+<button type="button" onclick="creat()">Add New Phone</button>
+<script>
+    class Phone{
+        constructor(name, price, color, product) {
+            this.name = name;
+            this.price = price;
+            this.color = color;
+            this.product = product;
+        }
+        getName(){
+            return this.name;
+        }
+        setName(value){
+            this.name = value;
+        }
+        getPrice(){
+            return this.price;
+        }
+        setPrice(value){
+            this.price = value;
+        }
+        getColor(){
+            return this.color;
+        }
+        setColor(value){
+            this.color = value;
+        }
+        getProduct(){
+            return this.product;
+        }
+        setProduct(value){
+            this.product = value;
+        }
+    }
+    let nokia = new Phone('Nokia', '1200$', 'Black', 'NOKIA');
+    let apple = new Phone('Iphone 13', '2400$', 'Blue', 'APPLE');
+    let arr = [nokia, apple];
+    phoNes(arr);
+    function phoNes(array) {
+        let  str = "<table border='1px'>" +
+            "<tr>" +
+            "<th>Phone Name</th>" +
+            "<th>Price</th>" +
+            "<th>Color</th>" +
+            "<th>Producer</th>" +
+            "<th>Update</th>"+
+            "</tr>";
+        for (let i = 0 ; i < array.length ; i++){
+            str += "<tr>" +
+                "<td>" + array[i].getName() + "</td>" +
+                "<td>" + array[i].getPrice() + "</td>" +
+                "<td>" + array[i].getColor() + "</td>" +
+                "<td>" + array[i].getProduct() + "</td>" +
+                "<td><button type='button' onclick='edit("+ i +")'>Edit</button><button type='button' onclick='remove("+ i +")'>Delete</button> </td>"+
+                "</tr>";
+        }
+        str += "</table>";
+        document.getElementById("display").innerHTML = str;
+    }
+    function creat() {
+        let name = prompt('enter the phone name');
+        let price = prompt('enter the price');
+        let color = prompt('enter the color');
+        let product = prompt('enter the producer');
+        let newS = new Phone(name, price, color, product);
+        arr.push(newS);
+        phoNes(arr);
+    }
+    function edit(i) {
+        arr[i].setName(prompt('enter phone name'));
+        arr[i].setPrice(prompt('enter phone price'));
+        arr[i].setColor(prompt('enter color'));
+        arr[i].setProduct(prompt('enter producer'));
+        phoNes(arr);
+    }
+    function remove(i) {
+        arr.splice(i, 1);
+        phoNes(arr);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap3</title>
+</head>
+<body>
+<p>
+    <b>Caculatory</b>
+</p>
+<table>
+    <tr>
+        <th>
+            <input style="text" id="nuberA">
+        </th>
+        <th>
+            <input style="text" id="nuberB">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button onclick="Addition()">Addition(+)</button>
+        </th>
+        <th>
+            <button onclick="Subtraction()">Subtraction(-)</button>
+        </th>
+        <th>
+            <button onclick="Multiplication()">Multiplication(X)</button>
+        </th>
+        <th>
+            <button onclick="Division()">Division(/)</button>
+        </th>
+    </tr>
+</table>
+<p id="result"></p>
+<script>
+    function Addition() {
+        let numberA = document.getElementById("nuberA").value;
+        let numberB = document.getElementById("nuberB").value;
+        let result = parseInt(numberA)+parseInt(numberB);
+        document.getElementById("result").innerHTML= result;
+    }
+    function Subtraction() {
+        let numberA = document.getElementById("nuberA").value;
+        let numberB = document.getElementById("nuberB").value;
+        let result = parseInt(numberA)-parseInt(numberB);
+        document.getElementById("result").innerHTML= result;
+    }
+</script>
+</body>
+</html>

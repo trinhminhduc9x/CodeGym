@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercise 6</title>
+</head>
+<body>
+<script>
+    let n1 = 0;
+    let n2 = 1;
+    let n3 = n1 + n2;
+    let sum = 0
+    let number = parseInt(prompt(" so lan muon in ra"));
+    for (let i = 0; i < number; i++) {
+        if (i == 0 || i == 1) {
+            sum = 1;
+        } else {
+            n1 = n2;
+            n2 = n3;
+            n3 = n1 + n2;
+            sum += n3;
+        }
+    }
+    document.write(sum + " <br>");
+</script>
+</body>
+</html>

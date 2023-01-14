@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<script>
+
+    let n = +prompt("Nhập độ dài của mảng");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = +prompt("Nhập phần tử thứ: " + i + "của mảng");
+    }
+    document.write(arr)
+
+
+
+    // let arr=[12,8,3,4]
+    for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[i] + arr[j] == 20) {
+                    arr[i]=20
+                    arr[j] = 20
+                }
+            }
+        } document.write( "<br>"+arr)
+</script>
+</body>
+</html>

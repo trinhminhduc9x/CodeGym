@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 11</title>
+</head>
+<body>
+<script>
+    // viết một chương trình để nhập lương nhân viên,
+    // tính thuế thu nhập và lương ròng (số tiền lương thực sự mà nhân viên đó nhận được).
+    // 30% thuế thu nhập nếu lương >= 15 triệu
+    // 20% thuế thu nhập nếu lương >= 7 đến <15 triệu
+    // 10% thuế thu nhập nếu lương < 7 triệu
+    let gross = parseFloat(prompt("Input the Gross Salary(millions):"));
+    let tax;
+    let net;
+    if (gross>=15){
+        net = gross - 0.03*gross;
+    } else if (gross>=7){
+        net = gross - 0.02*gross;
+    } else {
+        net = gross - 0.01*gross;
+    }
+    document.write('Your net salary is '+net+ "m");
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<button type="button" onclick="number()">kich vao </button>
+<p id="result">0</p>
+<script>
+function number(number) {
+   number = parseInt(prompt(" nhập vào một số"))
+    let result = number+1
+    // alert(" số mới là " + result)
+    document.getElementById("result").innerHTML= " số mới là " + result;
+    return result
+}
+</script>
+</body>
+</html>

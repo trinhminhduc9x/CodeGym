@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</title>
+</head>
+<body>
+<h1>
+    Tính gia cuoc
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number" max="1000" min="0" id="tienDien">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> so tien dien</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <p>
+            tren 400 ngan tang cuoc 50 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 300 ngan tang cuoc 40 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 200 ngan tang cuoc 30 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 100 ngan tang cuoc 20 %
+        </p>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let hoahong = document.getElementById("tienDien").value;
+        let ketqua;
+        if (hoahong>400){
+            ketqua= (parseFloat(hoahong*5/10) + parseInt(hoahong));
+        }else if (hoahong>300) {
+            ketqua = (parseFloat(hoahong*4/10) + parseInt(hoahong));;
+        } else  if ( hoahong> 200){
+            ketqua=(parseFloat(hoahong*3/10) + parseInt(hoahong));
+        } else  if ( hoahong> 100){
+            ketqua=(parseFloat(hoahong*2/10) + parseInt(hoahong));
+        } else {
+            ketqua=hoahong;
+        }
+        document.getElementById("ketqua").innerText = parseFloat(ketqua);
+
+    }
+</script>
+</body>
+</html>

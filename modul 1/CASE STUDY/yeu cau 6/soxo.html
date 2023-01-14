@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>soxo</title>
+</head>
+<style>
+    .tron{
+        background: #456BD9;
+        border: 0.1875em solid #0F1C3F;
+        border-radius: 50%;
+        box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+        height: 3em;
+        width: 3em;
+    }
+    td{
+        background-color: deeppink;
+    }
+    th{
+        background-color: lawngreen;
+    }
+    table{
+        width: 500px;
+        text-align: center;
+        child-align: middle;
+        align-items: center;
+    }
+
+</style>
+<body>
+<table align="center" >
+    <tr>
+        <td>
+            <button onclick="chonTungSo()" >chọn từng số</button>
+        </td>
+        <td>
+            <button onclick="chonRamdom()" >chọn ramdom</button>
+        </td>
+    </tr>
+    <tr>
+        <p id="hienthi"></p>
+    </tr>
+</table>
+
+<script>
+class Chonso {
+    constructor(so1,so2,so3,so4,so5,so6) {
+        this.so1 = so1;
+        this.so2 = so2;
+        this.so3 = so3;
+        this.so4 = so4;
+        this.so5 = so5;
+        this.so6 = so6;
+    }
+    getSo1() {
+        return this.so1;
+    }
+
+    setSo1(value) {
+        this.so1 = value;
+    }
+
+    getSo2() {
+        return this.so2;
+    }
+
+    setSo2(value) {
+        this.so2 = value;
+    }
+
+    getSo3() {
+        return this.so3;
+    }
+
+    setSo3(value) {
+        this.so3 = value;
+    }
+
+    getSo4() {
+        return this.so4;
+    }
+
+    setSo4(value) {
+        this.so4 = value;
+    }
+
+    getSo5() {
+        return this.so5;
+    }
+
+    setSo5(value) {
+        this.so5 = value;
+    }
+
+    getSo6() {
+        return this.so6;
+    }
+
+    setSo6(value) {
+        this.so6 = value;
+    }
+}
+// let so1=+prompt(" nhap so t");
+// let so2=+prompt(" nhap so 2")
+// let so3=+prompt(" nhap so 3")
+// let so4=+prompt(" nhap so 4")
+// let so5=+prompt(" nhap so 5")
+// let so6=+prompt(" nhap so 6")
+// let somoi= new Chonso(so1,so2,so3,so4,so5,so6)
+let somoi= new Chonso(1,2,3,4,5,6)
+let a= new  Chonso(3,2,1,2,3,4)
+arr=[somoi,a]
+function chonTungSo() {
+    let str = "<table border ='1px' align='center' >\n " +
+        "<tr>\n" +
+        " <th>số 1</th> \n" +
+        " <th>số 2</th> \n" +
+        " <th>số 3</th> \n" +
+        " <th>số 4</th> \n" +
+        " <th>số 5</th> \n" +
+        " <th>số 6</th> \n" +
+        " <th>" +
+        "<button   onclick='themham()'>thêm sổ xố</button>" +
+        "</th> \n" +
+        "</tr>" ;
+    for (let i=0;i<arr.length;i++){
+        str += "<tr>" +
+            "<td>" + arr[i].getSo1() + "</td>"+
+            "<td>" + arr[i].getSo2() + "</td>"+
+            "<td>" + arr[i].getSo3() + "</td>"+
+            "<td>" + arr[i].getSo4() + "</td>"+
+            "<td>" + arr[i].getSo5() + "</td>"+
+            "<td>" + arr[i].getSo6() + "</td>"+
+            "<td>" +
+            "<button id='update'  onclick='edit("+i+")'>update</button> " +
+            "<button id='detele' onclick='remove("+i+")'>detelet</button> " +
+            "</td>"+
+            "</tr>";
+    }
+    str+= "</table>";
+    document.getElementById("hienthi").innerHTML=str;
+}
+function themham() {
+    let so1=+prompt(" nhap so 1 ");
+let so2=+prompt(" nhap so 2");
+let so3=+prompt(" nhap so 3");
+let so4=+prompt(" nhap so 4");
+let so5=+prompt(" nhap so 5");
+let so6=+prompt(" nhap so 6");
+let somoithem= new Chonso(so1,so2,so3,so4,so5,so6)
+    arr.push(somoithem)
+    chonTungSo()
+}
+function edit(i){
+    let so21=+prompt(" nhap so 1 ");
+    let so22=+prompt(" nhap so 2");
+    let so23=+prompt(" nhap so 3");
+    let so24=+prompt(" nhap so 4");
+    let so25=+prompt(" nhap so 5");
+    let so26=+prompt(" nhap so 6");
+    arr[i].setSo1(so21);
+    arr[i].setSo2(so22);
+    arr[i].setSo3(so23);
+    arr[i].setSo4(so24);
+    arr[i].setSo5(so25);
+    arr[i].setSo6(so26);
+    chonTungSo()
+}
+function remove(i) {
+    arr.splice(i,1);
+    chonTungSo()
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label for="string">Nhập từ: </label>
+<input type="text" name="" id="string">
+<button onclick="transcript()">Dịch</button>
+<p id="result"></p>
+<script>
+    function transcript() {
+        let string = document.getElementById("string").value;
+        let array1 =[ "go", "school", "get"];
+        let array2 =[ "di", "truong", "nhan"];
+        let index_eng = 0;
+        let result = "";
+        for (let i = 0; i < array1.length; i++)
+        {
+            if (string == array1[i])
+            {
+                index_eng = i; //2
+                for (let j = 0; j < array2.length; j++)
+                {
+                    if (index_eng == j)
+                    { //2 == 2
+                        result = array2[j]; // táo
+                    }
+                }
+            }
+        }
+        document.getElementById("result").innerHTML = result;
+
+    }
+</script>
+</body>
+</html>

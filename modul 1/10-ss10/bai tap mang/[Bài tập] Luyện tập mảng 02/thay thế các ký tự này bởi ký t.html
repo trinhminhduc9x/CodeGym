@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n = +prompt("Nhập độ dài của mảng");
+    let arr = new Array(n);
+    for (let i = 0; i < n; i++) {
+        arr[i] = prompt("Nhập phần tử thứ: " + i + "của mảng");
+    }
+    document.write("Mảng bạn nhập là: [" + arr + "]");
+    for (let i = 0; i < n; i++) {
+        if (arr[i] == "-") {
+            arr[i] = "_";
+        }
+    }
+    document.write("<br>Mảng của bạn sau khi thay đổi là: [" + arr + "]");
+</script>
+</body>
+</html>

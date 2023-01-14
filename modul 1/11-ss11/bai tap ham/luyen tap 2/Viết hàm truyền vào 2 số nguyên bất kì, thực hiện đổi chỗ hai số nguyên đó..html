@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 7</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            số nguyên thứ nhất
+        </td>
+
+        <td>
+            <input type="number" id="number 1">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            số nguyên thứ hai
+        </td>
+
+        <td>
+            <input type="number" id="number 2">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > Đổi chỗ hai số nguyên</button>
+        </td>
+
+        <td>
+            <input type="text"  id="result1">
+        </td>
+        <td>
+            <input type="text"  id="result2">
+        </td>
+    </tr>
+</table>
+<script>
+    function check_result() {
+       number1 = document.getElementById("number 1").value;
+       number2 = document.getElementById("number 2").value;
+        document.getElementById("result1").value=number2;
+        document.getElementById("result2").value=number1;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let str1 = prompt("Nhập vào chuỗi thứ nhất");
+    document.write("Chuỗi thứ nhất là: " + str1);
+    let str2 = prompt("Nhập vào chuỗi thứ hai");
+    document.write("<br>Chuỗi thứ hai là: " + str2);
+    result = "";
+    if(str1.length != str2.length) {
+        document.write("<br>Hai chuỗi bạn vừa nhập không giống nhau.")
+    } else {
+        for (let i = 0; i < str1.length; i++) {
+            if(str1[i] != str2[i]) {
+                result = "<br>Hai chuỗi bạn vừa nhập không giống nhau.";
+            } else {
+                result = "<br>Hai chuỗi bạn vừa nhập giống nhau.";
+            }
+        }
+        document.write(result);
+    }
+</script>
+</body>
+</html>

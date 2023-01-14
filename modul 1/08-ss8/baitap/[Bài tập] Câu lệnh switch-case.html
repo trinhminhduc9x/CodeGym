@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Câu lệnh switch-case</title>
+    <style>
+        div{
+            margin: 200px auto;
+            width: 410px;
+            height: 200px;
+            border: 2px solid blue;
+            background-color: aquamarine;
+            box-shadow:5px 5px 5px #008080;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<table>
+    <tr>
+        <th>
+            <input min="1" max="12"  type="number" id="thang" >
+        </th>
+        <th>
+           <button  onclick="tinhSongay()">TÍNH SỐ NGÀY</button>
+        </th>
+    </tr>
+    <tr>
+        <th id="ketqua">
+           ĐÂY LÀ CHỖ HIỆN THỊ KẾT QUẢ
+        </th>
+
+    </tr>
+    <script>
+        function tinhSongay() {
+          let  sothang = document.getElementById("thang").value;
+            switch (sothang) {
+                case "1" :
+                case "3":
+                case "5":
+                case "7":
+                case "8":
+                case "10":
+                case "12":
+                    document.getElementById("ketqua").innerHTML = "thang nay co 31 ngay";
+                    break;
+                    case "4":
+                case "6":
+                case "9":
+                case "11":
+                    document.getElementById("ketqua").innerHTML = "thang nay co 30 ngay";
+                    break;
+                case "2" :
+                    document.getElementById("ketqua").innerHTML = "thang nay co 28 ngay va 29 ngay";
+                    break;
+                default:
+                    document.getElementById("ketqua").innerHTML = "khong dung cu phap";
+
+            }
+            ;
+// switch (sothang) {
+//     case "1" :
+//         result = " thang 1 co 31 ngay";
+//         break;
+//     case 2 :
+//         result = " thang 2 co 28 ngay hoac 29 ngay";
+//         break;
+//     case 3 :
+//         result = " thang 3 co 31 ngay";
+//         break;
+//     case 4 :
+//         result = " thang 4 co 30 ngay";
+//         break;
+//     case 5 :
+//         result = " thang 5 co 31 ngay";
+//         break;
+//     case 6 :
+//         result = " thang 6 co 30 ngay";
+//         break;
+//     case 7 :
+//         result = " thang 7 co 31 ngay";
+//         break;
+//     case 8 :
+//         result = " thang 8 co 31 ngay";
+//         break;
+//     case 9 :
+//         result = " thang 9 co 30 ngay";
+//         break;
+//     case 10 :
+//         result = " thang 10 co 31 ngay";
+//         break;
+//     case 11 :
+//         result = " thang 11 co 30 ngay";
+//         break;
+//     case 12 :
+//         result = " thang 12 co 31 ngay";
+//         break;
+//     default:
+//         result = " nhap dung so thang , ban can nhap lai";
+// }
+//             document.getElementById("ketqua").value = result;
+        }
+    </script>
+</table>
+</div>
+</body>
+</html>

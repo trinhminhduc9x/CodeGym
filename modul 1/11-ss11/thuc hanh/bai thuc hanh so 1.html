@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh 1</title>
+</head>
+<body>
+<script>
+function processConfirm (answer) {
+let result = "";
+if (answer){
+    result = " excellent. Well play a nice game of chess.";
+}else{
+    result = " maybe later them.";
+}
+return result;
+}
+let confirmAnswer= confirm(" shall we a game ?");
+let theAnswer = processConfirm ( confirmAnswer);
+alert(theAnswer)
+</script>
+</body>
+</html>

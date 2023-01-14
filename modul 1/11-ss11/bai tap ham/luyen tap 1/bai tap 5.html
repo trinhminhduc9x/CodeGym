@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let arrStar1 = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+    let arrStar2 = ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+    let star = prompt("nhập vào tên ngôi sao cần tìm");
+    check_star(star)
+    document.write(check_star(star))
+ function check_star(star) {
+        let result ="" ;
+    for (let i = 0; i<arrStar1.length; i++){
+        if (star ==arrStar1[i]){
+            return arrStar2[i];
+         }else {
+            result = "không tìm thấy kết quả ";
+        }
+    }
+    return result;
+    }
+
+    //
+    // let nameStar = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    // let valueSt = ["Ursa Minor","Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    //
+    // // let str = prompt("Nhập vào tên ngôi sao");
+    // document.write(checkStar(str));
+    //
+    // function checkStar(str) {
+    //     let result = "";
+    //     for (let i = 0; i < nameStar.length; i++) {
+    //         if(str == nameStar[i]) {
+    //             return valueSt[i];
+    //         } else {
+    //             result = "Không tìm thấy ngôi sao";
+    //         }
+    //     }
+    //     return result;
+    // }
+
+</script>
+</body>
+</html>

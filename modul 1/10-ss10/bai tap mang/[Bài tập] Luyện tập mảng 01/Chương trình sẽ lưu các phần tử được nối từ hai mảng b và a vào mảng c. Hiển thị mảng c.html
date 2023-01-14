@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 9</title>
+</head>
+<body>
+<script>
+    let strA = prompt("so phan tu trong mang ");
+    let arrStrA = strA.split("");
+    let strB = prompt("enter you  ten number A ");
+    let arrStrB = strB.split("");
+    let arrC = []
+    for (let i=0; i< arrStrA.length; i++)
+    {
+        arrC.push(arrStrA[i])
+    }
+    for (let i=0; i< arrStrA.length; i++)
+    {
+        arrC.push(arrStrB[i])
+    }
+    // let arrC = arrStrA.concat(arrStrB)
+     document.write(arrC)
+
+
+
+
+</script>
+</body>
+</html>

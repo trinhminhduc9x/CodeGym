@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>soxo</title>
+</head>
+<style>
+    .tron{
+        background: #456BD9;
+        border: 0.1875em solid #0F1C3F;
+        border-radius: 50%;
+        box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+        height: 3em;
+        width: 3em;
+        text-align: center;
+    }
+    td{
+        background-color: deeppink;
+    }
+    th{
+        background-color: lawngreen;
+    }
+    table{
+        width: 500px;
+        text-align: center;
+        child-align: middle;
+        align-items: center;
+    }
+
+</style>
+<body>
+<table align="center" >
+    <tr>
+        <td>
+            <button onclick="chonTungSo()" >chọn từng số</button>
+        </td>
+        <td>
+            <button onclick="chonRamdom()" >chọn ramdom</button>
+        </td>
+    </tr>
+    <tr>
+        <p id="hienthi"></p>
+    </tr>
+</table>
+<script>
+    class Chonso {
+        constructor(so1,so2,so3,so4,so5,so6) {
+            this.so1 = so1;
+            this.so2 = so2;
+            this.so3 = so3;
+            this.so4 = so4;
+            this.so5 = so5;
+            this.so6 = so6;
+        }
+        getSo1() {
+            return this.so1;
+        }
+
+        setSo1(value) {
+            this.so1 = value;
+        }
+
+        getSo2() {
+            return this.so2;
+        }
+
+        setSo2(value) {
+            this.so2 = value;
+        }
+
+        getSo3() {
+            return this.so3;
+        }
+
+        setSo3(value) {
+            this.so3 = value;
+        }
+
+        getSo4() {
+            return this.so4;
+        }
+
+        setSo4(value) {
+            this.so4 = value;
+        }
+
+        getSo5() {
+            return this.so5;
+        }
+
+        setSo5(value) {
+            this.so5 = value;
+        }
+
+        getSo6() {
+            return this.so6;
+        }
+
+        setSo6(value) {
+            this.so6 = value;
+        }
+    }
+    function chonTungSo() {
+        let str = "<table border ='1px' align='center' >\n " +
+            "<tr>\n" +
+            " <th>số 1</th> \n" +
+            " <th>số 2</th> \n" +
+            " <th>số 3</th> \n" +
+            " <th>số 4</th> \n" +
+            " <th>số 5</th> \n" +
+            " <th>số 6</th> \n" +
+            " <th>" +
+            "<button   onclick='themham()'>thêm sổ xố</button>" +
+            "</th> \n" +
+            " <th>" +
+            "<button   onclick='luuso()'>lưu sổ xố </button>" +
+            "</th> \n" +
+            // " <th>" +
+            // "<button   onclick='xoay()'>quay sổ xố</button>" +
+            // "</th> \n" +
+            "</tr>";
+        for (let j=0; j<1; j++) {
+            str += "<tr>" +
+                "<td>" +
+                " <input class='tron' id='so1' type='number' max='99' min='00'>" +
+                "</td>"+
+                "<td>" +
+                " <input class='tron' id='so2' type='number' max='99' min='00'>" +
+                "</td>"+
+                "<td>" +
+                " <input class='tron' id='so3' type='number' max='99' min='00'>" +
+                "</td>"+
+                "<td>" +
+                " <input class='tron' id='so4' type='number' max='99' min='00'>" +
+                "</td>"+
+                "<td>" +
+                " <input class='tron' id='so5' type='number' max='99' min='00'>" +
+                "</td>"+
+                "<td>" +
+                " <input class='tron' id='so6' type='number' max='99' min='00'>" +
+                "</td>"
+        }
+        str+= "</table>";
+        document.getElementById("hienthi").innerHTML=str;
+    }
+    function luuso(){
+        let so1= document.getElementById('so1').value
+        let so2= document.getElementById('so2').value
+        let so3= document.getElementById('so3').value
+        let so4= document.getElementById('so4').value
+        let so5= document.getElementById('so5').value
+        let so6= document.getElementById('so6').value
+        let chonsomoi = new Chonso(so1,so2,so3,so4,so5,so6)
+       let arr=[chonsomoi]
+        arr2=[];
+        arrD=[2,3,4,5,6,1]
+        for (let i = 0; i <arr.length ; i++) {
+            arr2[0]=arr[i].getSo1()
+            arr2[1]=arr[i].getSo2()
+            arr2[2]=arr[i].getSo3()
+            arr2[3]=arr[i].getSo4()
+            arr2[4]=arr[i].getSo5()
+            arr2[5]=arr[i].getSo6()
+            }
+        if (arr2[0]==arrD[0] &&
+            arr2[1]==arrD[1] &&
+            arr2[2]==arrD[2] &&
+            arr2[3]==arrD[3] &&
+            arr2[4]==arrD[4] &&
+            arr2[5]==arrD[5] ){
+            alert("bạn đã trúng")
+        }else {
+            alert("bạn ko trúng")
+        }
+    }
+// function xoay() {
+//
+//     f
+//
+// }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let strA ="aabccddeegghhii";
+    let strB ="adcaaabbcegi";
+    let arrStra=strA.split("");
+    let arrStrb=strB.split("");
+    let arrC =[];
+    let count =1;
+    for (let i = 0; i <arrStra.length ; i++) {
+        for (let j = 0; j <arrStrb.length ; j++) {
+            if (arrStra[i]==arrStrb[j]){
+                arrC.push(arrStra[i])
+                arrStrb[j]=""
+                arrStra[i]="*"
+            }
+        }
+    }
+    document.write(arrC+"<br>")
+    for (let i = 0; i <arrC.length ; i++) {
+        for (let j = i+1; j <arrC.length ; j++) {
+            if (arrC[i]==arrC[j]){
+                count ++
+                arrC.splice(j,1);
+            }
+        }
+        if (count>0){
+            document.write(arrC[i]+" xuất hiện "+ count +"<br>")
+        }
+        count=1;
+    }
+    console.log(arrC)
+    // console.log(count)
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tạo form đơn giảng</title>
+    <style>
+        body{
+            margin: 0;
+            padding:0;
+            background-color: aqua;
+        }
+        .khoi_to{
+            margin: 20px auto;
+            width: 1200px;
+            height: 450px;
+            border: 1px solid aqua;
+            background-color: #FFFFFF;
+        }
+        h1{
+            text-align: center;
+            background-color: coral;
+            height: 60px;
+            margin: 20px ;
+            line-height: 60px;
+            font-size: 50px;
+            color: #FFFFFF;
+        }
+        form{
+            font-size: 26px;
+        }
+        .bang1 input {
+            height: 27px;
+            width: 300px;
+            box-shadow: -1px -1px 5px #000000;
+        }
+        table {
+            margin-left: 100px;
+        }
+        .bang2 input {
+            width: 25px;
+            height: 25px;
+            margin-left: 50px;
+        }
+        p{
+            margin-left: 250px;
+        }
+        button{
+            height: 35px;
+            width: 150px;
+            box-shadow: 1px 1px 2px #000000;
+        }
+        .bang2 td{
+            color: coral;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="khoi_to">
+    <h1>Sở Thích Của Bạn</h1>
+    <form>
+        <table class="bang1" CELLSPACING="10">
+            <tr>
+                <th >
+                    Họ và Tên
+                </th>
+                <td>
+                    <input type="text" name="yourname"/>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <td>
+                    <input type="email" name="email"/>
+                </td>
+            </tr>
+
+        </table><br/>
+        <table class="bang2" >
+            <tr>
+                <th >Sở Thích</th>
+                <td><input type="checkbox" name="email" />thể thao</td>
+                <td><input type="checkbox" name="email"/>lướt web</td>
+                <td><input type="checkbox" name="email"/>du lịch</td>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td><input type="checkbox" name="email"/>âm nhạc</td>
+                <td><input type="checkbox" name="email"/>chơi game</td>
+                <td><input type="checkbox" name="email"/>đọc sách</td>
+            </tr>
+            <tr>
+
+                <td><input type="checkbox" name="email"/>điện ảnh</td>
+            </tr>
+
+
+        </table>
+        <p>
+            <button type="submit">Gửi thông tin</button>
+            <button type="submit">Nhập lại</button>
+        </p>
+    </form>
+</div>
+</body>
+</html>

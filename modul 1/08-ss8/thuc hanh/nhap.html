@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>doremon</title>
+</head>
+<body>
+<body onload="docReady()">
+<img id="doremon" src="https://cdn.pixabay.com/photo/2019/10/16/09/09/doraemon-4553920_1280.png"
+     style="position:absolute;left:0; top:0;" height="300" width="240"/>
+</body>
+<script>
+    function len() {
+        let element = document.getElementById("doremon");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function xuong() {
+        var element = document.getElementById("doremon");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function trai() {
+        var element = document.getElementById("doremon");
+        element.style.left = parseInt(element.style.left) - 5 + 'px';
+    }
+    function phai() {
+        var element = document.getElementById("doremon");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
+
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                trai();
+                break;
+            case 39:
+                phai();
+                break;
+            case 38:
+                len();
+                break;
+            case 40:
+                xuong();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+
+
+</body>
+</html>

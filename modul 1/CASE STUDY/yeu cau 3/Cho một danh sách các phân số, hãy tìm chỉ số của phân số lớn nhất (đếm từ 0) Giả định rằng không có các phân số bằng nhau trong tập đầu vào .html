@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let arrA=[5,2,5];
+    let arrB=[6,3,4];
+    let arrC=[];
+    let a;
+    let tmp = 0;
+    let max = arrA[0]/arrB[0]
+    for (let i = 1; i < arrA.length; i++) {
+        if(max < arrA[i]/arrB[i]) {
+            max = arrA[i]/arrB[i];
+            tmp = i;
+        }
+    }
+    document.write(arrA[tmp] + "/" + arrB[tmp] + " là phân số lớn nhất nằm ở vị trí " + tmp);
+    // for (let i = 0; i <arrA.length ; i++) {
+    //     a= arrA[i] / arrB[i]
+    //     arrC.push(a)
+    // }
+    // console.log(arrC)
+    // arrC.sort(function (a,b) {
+    //     return a-b;
+    // })
+    // for (let value of arrA){
+    //
+    // }       document.write(arrC[arrC.length-1] + " là phân số lớn nhất ")
+</script>
+</body>
+</html>

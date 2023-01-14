@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</title>
+</head>
+<body>
+<script>
+   let baiKiemtra= prompt("nhap vao diem bai kiem tra ");
+    let diemThigiuaky= prompt("nhap vao diem thi giu ky");
+   let diemThicuoiky= prompt("nhap vao diem thi cuoi ky");
+   let avg = ((parseInt(baiKiemtra)*1) + (parseInt(diemThigiuaky)*2) + (parseInt(diemThicuoiky)*3))/6;
+    if (avg>8){
+            alert( " hoc sinh gioi")
+        }else if (avg>6) {
+            alert( " hoc sinh kha")
+        } else  if ( avg> 4){
+        alert(" hoc sinh trung binh")
+    } else {
+        alert("hoc sinh yeu")
+    }
+</script>
+</body>
+</html>

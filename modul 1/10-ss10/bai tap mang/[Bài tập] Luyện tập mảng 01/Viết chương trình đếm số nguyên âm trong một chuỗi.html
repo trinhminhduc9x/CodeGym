@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+</head>
+<body>
+<script>
+    let str = prompt("enter you  ten number");
+    let arrStr = str.split(" ");
+    let index ;
+   for (let i = 0; i<arrStr.length;i++)
+   {
+       if (arrStr[i]<0)
+       {
+           index = i;
+           console.log(arrStr[i])
+           document.write(" so am la " + arrStr[i] + " tai so thu tu " + index+"<br>")
+       }
+   }
+</script>
+</body>
+</html>

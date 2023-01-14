@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 8</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > nhập mảng để đảo ngược</button>
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+</table>
+<script>
+    function check_result() {
+        let Str=parseInt(prompt(" nhập số phần tử mảng"));
+        arrStr =[];
+        for (let i=0; i<Str;i++){
+            arrStr[i]=prompt(" nhập các phần tử mảng  "+i);
+        }
+        document.write("mảng cũ là "+arrStr)
+        arrStr2=[];
+        let lastArr=arrStr.length-1;//4
+        for (let j=0; j<=arrStr.length-1; j++){
+            arrStr2[j]=arrStr[lastArr];
+            lastArr--;
+        }
+        document.write("<br>"+"mảng mới là "+ arrStr2)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let str = prompt("enter you  ten number");
+    let arrStr = str.split(" ");
+    let result;
+    let index;
+     // console.log(arrStr[0])
+    for (let i=0;i<arrStr.length;i++)
+    {
+        for (let j =0; j < arrStr.length;j++)
+        {
+            if (arrStr[j]>arrStr[i])
+            {
+                result= arrStr[j]
+                index = j
+                console.log(result)
+            }
+        }
+    }
+    document.write(result + "so thu " + index)
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 2</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(c){
+            this.c= c;
+        }
+        getC(){
+            return this.c;
+        }
+        setC(C){
+            this.c= c;
+        }
+        getCtoF(){
+            return (this.c*9/5+32);
+        }
+        getCtoKenvin(){
+            return (this.c + 273);
+        }
+    }
+    let temperature = new Temperature();
+    let c = parseInt(prompt(" nhập nhiệt độ C cần chuyển "))
+    temperature.setC(c);
+    if (c>-273){
+        let C = temperature.getC();
+        let F = temperature.getCtoF();
+        let Kenvin= temperature.getCtoKenvin();
+        document.write(" nhiệt độ C là : "+ C +" độ C " + " chuyển thành nhiệt độ F: "+ F + " độ F "  + " và chuyển thành nhiệt độ Kenvin là : " + Kenvin + " độ Kenvin" )
+
+    }else {
+        document.write(" nhập vào nhiệt độ C không đúng")
+    }
+
+</script>
+</body>
+</html>

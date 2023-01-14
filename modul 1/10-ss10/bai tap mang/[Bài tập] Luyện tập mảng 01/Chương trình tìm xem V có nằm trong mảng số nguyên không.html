@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 6</title>
+</head>
+<body>
+<script>
+    let str = prompt("enter you  ten number");
+    let arrStr = str.split(" ");
+    let search = parseInt(prompt(" nhap vao 1 ký tự cần tìm"));
+    let number = 0;
+    for (let i = 0; i< arrStr.length;i++)
+    {
+        if (search==arrStr[i] ) {
+            number++
+            // arrStr.splice(i,1)
+            // console.log(arrStr)
+        }
+    }
+    if (number> 0)
+    {
+        document.write("V is in the array");
+    } else {
+        document.write("V is not in the array ");
+    }
+</script>
+</body>
+</html>

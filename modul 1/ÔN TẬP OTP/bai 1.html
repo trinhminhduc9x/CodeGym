@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 1</title>
+</head>
+<body>
+<script>
+    class Thucan{
+        constructor(cannang) {
+            this.cannang = cannang;
+        }
+        getcannang(){
+           return this.cannang ;
+        }
+        kiemtrasoluong(){
+            if (this.cannang>0){
+               return  true;
+            } else {
+               return false;
+            }
+        }
+        batdauan(){
+            if (this.kiemtrasoluong()){
+                this.cannang--;
+            }else {
+               document.write(" hãy mua đồ ăn")
+            }
+        }
+
+    }
+
+
+    class Vat{
+        constructor(cannang) {
+            this.cannang=cannang;
+        }
+        getcannang(){
+            return this.cannang;
+        }
+        kiemtradoan(Thucan){
+            return Thucan.kiemtrasoluong();
+
+        }
+        an(a){
+            if (a.getcannang()>0){
+                a.batdauan()
+                this.cannang++
+            }else {
+                document.write(" hãy mua đồ ăn")
+            }
+        }
+    }
+    let a = new Thucan(10)
+    let b=new Vat(10)
+    document.write("Adam ăn táo" + "<br>");
+    b.an(a);
+    document.write("Quả táo còn: " + "<br>");
+    document.write(a.getcannang() + " đơn vị" + "<br>");
+    document.write( "Cân nặng của Adm là: " + b.getcannang() + " đơn vị" + "<br>");
+</script>
+</body>
+</html>

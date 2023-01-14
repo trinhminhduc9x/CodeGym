@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2..</title>
+</head>
+<body>
+<h1>
+    Giải phương trình bậc 1 có dạng Ax^2 + Bx + c = 0
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number"  id="A">
+        </th>
+        <th>
+            <input type="number"  id="B">
+
+        </th>
+        <th>
+            <input type="number"  id="C">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> tính phương trình</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p> nhap A</p>
+        </th>
+        <th>
+            <p>nhap B</p>
+        </th>
+        <th>
+            <p>nhap C</p>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua1" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua x1 o day
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua2" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua x2 o day
+            </p>
+        </th>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let a = document.getElementById("A").value;
+        let b = document.getElementById("B").value;
+        let c = document.getElementById("C").value;
+        let anfa = (parseInt(b)* parseInt(b))- (4*parseInt(a)*parseInt(c));
+        let x1;
+        let x2;
+        if (anfa>0){
+            x1= (-parseInt(b) + (Math.sqrt(parseFloat(anfa))))/(2*parseInt(a));
+            x2= (-parseInt(b) - (Math.sqrt(parseFloat(anfa))))/(2*parseInt(a));
+        } else if (anfa<0){
+            x1=  "phuong trinh vo nghiem" ;}
+          else {
+         x1 = (parseInt(b))/(2*parseInt(a));
+          }
+        document.getElementById("ketqua1").innerText= x1 ;
+         document.getElementById("ketqua2").innerText= x2;
+    }
+</script>
+</body>
+</html>

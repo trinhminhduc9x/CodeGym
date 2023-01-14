@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 10</title>
+</head>
+<body>
+<script>
+    //Viết chương trình tính số tiền điện cần phải thanh toán của 1 hộ gia đình được tính như sau:
+    // + 100KW (còn gọi là số đầu tien), mỗi số phải trả 650đồng
+    // + từ 101 số trở lên, mỗi số phải trả 1200 đồng
+    let dien = parseFloat(prompt("nhap so dien (kW)"));
+    let tien;
+    if (dien<=100){
+        tien = dien * 650;
+    } else {
+        tien = (650*100) + ((dien-100)*1200);
+    }
+    document.write('Tien dien thang nay: ' + tien);
+</script>
+</body>
+</html>

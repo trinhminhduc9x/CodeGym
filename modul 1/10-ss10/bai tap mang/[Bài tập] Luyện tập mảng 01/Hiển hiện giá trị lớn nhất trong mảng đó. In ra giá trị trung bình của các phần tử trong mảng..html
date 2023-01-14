@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+<script>
+    let str = prompt("enter you number");
+    let arrStr = str.split(" ");
+    let result;
+    let index1;
+    let index2;
+    let sum = 0 ;
+    let averave;
+    // console.log(arrStr[0])
+    for (let i=0;i<arrStr.length;i++)
+    {
+        for (let j =0; j < arrStr.length;j++)
+        {
+            if (arrStr[j]>arrStr[i])
+            {
+                result= arrStr[j]
+                index1 = j
+                console.log(result)
+            }
+        }
+        sum +=  parseInt(arrStr[i])
+        index2 = i+1
+    }
+    document.write("so lon nhat la "+result + " so thu " + index1)
+    averave = sum/ parseInt(index2)
+    document.write( "<br>"+"diem trung binh la: " + averave)
+    console.log(sum)
+</script>
+</body>
+</html>

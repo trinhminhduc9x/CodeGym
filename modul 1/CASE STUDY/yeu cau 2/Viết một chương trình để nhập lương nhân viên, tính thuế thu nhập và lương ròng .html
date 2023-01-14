@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<script>
+    let money=parseInt(prompt(" nhập tiền lương nhân viên"));
+    let result;
+if (money>15000000){
+    result = money-money*20/100;
+    document.write("số tiền lương nhận được là "+result);
+}else if (money>7000000){
+        result = money-money*10/100;
+        document.write("số tiền lương nhận được là "+result);
+    }else if (money<7000000){
+    result = money-money*5/100;
+    document.write("số tiền lương nhận được là "+result);
+}
+</script>
+</body>
+</html>

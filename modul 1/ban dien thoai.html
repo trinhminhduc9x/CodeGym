@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    td{
+        background-color: deeppink;
+    }
+    th{
+        background-color: lawngreen;
+    }
+    table{
+        width: 500px;
+        text-align: center;
+        child-align: middle;
+        align-items: center;
+    }
+
+</style>
+<body>
+<button type="button"  onclick="display()">kích vào để bắt đầu</button>
+<p id="display"></p>
+<script>
+    class Dienthoai{
+        constructor(ten,gia,mausac,sanxuat) {
+            this.ten = ten;
+            this.gia = gia;
+            this.mausac = mausac;
+            this.sanxuat = sanxuat;
+        }
+        getTen() {
+            return this.ten;
+        }
+
+        setTen(ten) {
+            this.ten = ten;
+        }
+        getGia() {
+            return this.gia;
+        }
+
+        setGia(gia) {
+            this.gia = gia;
+        }
+
+        getMausac() {
+            return this.mausac;
+        }
+
+        setMausac(mausac) {
+            this.mausac = mausac;
+        }
+
+        getSanxuat() {
+            return this.sanxuat;
+        }
+
+        setSanxuat(sanxuat) {
+            this.sanxuat = sanxuat;
+        }
+    }
+    var nokia= new Dienthoai("nokia",100,"xanh",1998);
+    var samsung= new Dienthoai("samsung",100,"vang",1997);
+    // console.log(arr)
+    var arr=[nokia,samsung]
+    function display() {
+        let str = "<table border ='1px'>\n " +
+            "<tr>\n" +
+            " <th>ten</th> \n" +
+            " <th>gia</th> \n" +
+            " <th>mau sac</th> \n" +
+            " <th>nha san xuat</th> \n" +
+            " <th>chuc nang</th> \n" +
+            "</tr>" ;
+        for (let i=0;i<arr.length;i++){
+            str += "<tr>" +
+                "<td>" + arr[i].getTen() + "</td>"+
+                "<td>" + arr[i].getGia()  + "</td>"+
+                "<td>" + arr[i].getMausac() + "</td>"+
+                "<td>" + arr[i].getSanxuat() + "</td>"+
+                "<td>" +
+                "<button id='update'  onclick='edit("+i+")'>update</button> " +
+                "<button id='detele' onclick='remove("+i+")'>detelet</button> " +
+                "</td>"+
+                "</tr>";
+        }
+        str+= "<tr>\n" +
+            " <th>" +
+            "<button   onclick='themham()'>new</button>" +
+            "</th> \n" +
+            "</tr>" ;
+        str+= "</table>";
+        document.getElementById("display").innerHTML=str;
+    }
+function themham() {
+    let ten1 =prompt(" nhap ten");
+    let gia1 =prompt(" nhap gia")
+    let mausac1 =prompt(" nhap mau")
+    let nhasanxuat1 =prompt(" nhap nha san xuat")
+    var newdt= new Dienthoai(ten1,gia1,mausac1,nhasanxuat1);
+    arr.push(newdt)
+    display()
+}
+    function edit(i){
+        let ten1 =prompt(" nhap ten");
+        let gia1 =prompt(" nhap gia");
+        let mausac1 =prompt(" nhap mau");
+        let nhasanxuat1 =prompt(" nhap nha san xuat");
+        arr[i].setTen(ten1);
+        arr[i].setGia(gia1);
+        arr[i].setMausac(mausac1);
+        arr[i]. setSanxuat(nhasanxuat1);
+        display()
+    }
+    function remove(i){
+        arr.splice(i, 1);
+        display(arr)
+    }
+</script>
+</body>
+</html>

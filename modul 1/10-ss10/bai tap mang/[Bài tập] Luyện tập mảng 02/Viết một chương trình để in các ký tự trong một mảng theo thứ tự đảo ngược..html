@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let str1 = prompt(" nham chuoi 1")
+    let arrStr1 = [];
+    for (let i=0; i< str1; i++)
+    {
+        arrStr1[i] = prompt( " nhap so phan tu chuoi 1")
+    }
+    let first = 0;
+    let last = arrStr1.length - 1;//8 so
+    for (let i = 0 ;i<last;i++)
+    {
+        let b = arrStr1[first];
+       arrStr1[first]= arrStr1[last];
+       arrStr1[last]= b;
+        first++;
+        last--
+    }
+    document.write(arrStr1)
+</script>
+</body>
+</html>

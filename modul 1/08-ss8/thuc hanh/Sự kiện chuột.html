@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>thuc hanh su kien chuot</title>
+</head>
+<body>
+<form>
+<img id="cogai"  src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-cartoon-cute-girl-walking-is-a-commercial-element-design-png-image_4036387.jpg" style="width: 20%"/>
+<p>Hãy cho cô gái di chuyển đến chàng trai </p>
+    <button type="button" value="Clickme" onclick="quatrai()">
+        Đi qua trái
+    </button>
+<button type="button" value="Clickme" onclick="quaphai()">
+    Đi qua phải
+</button>
+
+    <script>
+let imgObj = null;
+imgObj= document.getElementById("cogai");
+function init() {
+    imgObj = document.getElementById("cogai");
+    imgObj.style.position = 'relative';
+    imgObj.style.left = '0px';
+}
+function quaphai() {
+    imgObj.style.left = parseInt(imgObj.style.left) + 30 + 'px';
+}
+function quatrai() {
+    imgObj.style.left = parseInt(imgObj.style.left) - 30 + 'px';
+}
+window.onload = init;
+    </script>
+</form>
+</body>
+</html>

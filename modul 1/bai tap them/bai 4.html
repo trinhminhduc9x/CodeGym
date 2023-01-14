@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<script>//1,3,4,1,3,2
+// let string= prompt(' nhap so ky tu ');
+let arr = [1, 3, 2, 5,1,1,1, 7, 7, 1, 3, 2];
+let count = 1;
+for (let i = 0; i < arr.length; i++) {
+    if (arr[i] != "") {
+        count = 1;
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] == arr[j]) {
+                count++;
+                arr[j] = "";
+            }
+        }
+        document.write(arr[i] + ":" + count + "<br>")
+    }
+
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</title>
+</head>
+<body>
+<h1>
+    Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number"  id="canhA">
+        <th>
+            <input type="number"  id="canhB">
+        </th>
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> tinhdientich</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let canha = document.getElementById("canhA").value;
+        let canhab = document.getElementById("canhB").value;
+        let Multiplication1 = (parseInt(canha) * parseInt(canhab));
+        document.getElementById("ketqua").innerText= Multiplication1;}
+</script>
+</body>
+</html>

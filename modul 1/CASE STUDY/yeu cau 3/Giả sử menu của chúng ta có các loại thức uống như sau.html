@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 5</title>
+    <style>
+        tr td button {
+            width: 200px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+
+<!--&lt;!&ndash;<table border="1" cellspacing="20"  cellpadding="0">&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td colspan="4"  style="height: 50px; text-align: right">&ndash;&gt;-->
+<!--&lt;!&ndash;            <span id="result"></span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td colspan="4" > vui lòng nhập số lượng tại đây </td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td colspan="4" ><input type="number" id="number">số lượng</td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('1')">1</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('2')">2</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('3')">3</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('4')">4</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('5')">5</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('6')">6</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('7')">7</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('8')">8</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td><button type="button" onclick="calBasic('9')">9</button></td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;</table>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<script>&ndash;&gt;-->
+<!--    // function calBasic(operator) {-->
+<!--    //     /*Lấy giá trị ô kết quả*/-->
+<!--    //     let result = document.getElementById("result").innerText;-->
+<!--    //     document.getElementById("result").innerText = result;-->
+<!--    //     let arr=[5000,10000,15000,12000,2000,15000,1000,1500,2000];-->
+<!--    //     for (let i = 0; i <arr.length ; i++) {-->
+<!--    //         let a = i+1;-->
+<!--    //         if (a==parseInt(operator) ){-->
+<!--    //             var c=arr[i]-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //     let sl=document.getElementById("number").value;-->
+<!--    //     let kg=parseInt(c)*parseInt(sl);-->
+<!--    //     console.log(c)-->
+<!--    //     console.log(sl)-->
+<!--    //     switch (operator) {-->
+<!--    //         case '1':-->
+<!--    //             result = " chọn cafe đơn giá 5000 đồng với số lượng là " + sl + " có tổng giá tiền là "+kg + " đồng" ;-->
+<!--    //             break;-->
+<!--    //         case '2':-->
+<!--    //             result = " chọn Cam vắt đơn giá 10 000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         case '3':-->
+<!--    //             result = " chọn Nước ép cà rốt đơn giá 15000 đồng với số lượng là " + sl + " có tổng giá tiền là "+kg + " đồng" ;-->
+<!--    //             break;-->
+<!--    //         case '4':-->
+<!--    //             result = " chọn Nước ép cà chua đơn giá 12000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         case '5':-->
+<!--    //             result = " chọn Nước lọc đơn giá 2000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         case '6':-->
+<!--    //             result = " chọn Nước dừa đơn giá 15000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         case '7':-->
+<!--    //             result = " chọn Trà đá đơn giá 1000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         /*Nhóm xóa kết quả*/-->
+<!--    //         case '8':-->
+<!--    //             result = " chọn Trà thơm đơn giá 1500 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //         case '9':-->
+<!--    //             result = " chọn Trà hoa đơn giá 2000 đồng với số lượng là "+ sl + " có tổng giá tiền là "+kg + " đồng";-->
+<!--    //             break;-->
+<!--    //     }-->
+<!--    //     document.getElementById("result").innerText = result;-->
+
+
+
+
+
+
+<!--&lt;!&ndash;        let menu = ["Cafe", "Cam Vắt", "Nước Ép Cà Rốt", "Nước Ép cà chua", "Nước lọc", "Nước Dừa", "thoát gọi món"]&ndash;&gt;-->
+<!--&lt;!&ndash;        let stt = [1, 2, 3, 4, 5, 6, 7]&ndash;&gt;-->
+<!--&lt;!&ndash;        let primes = [45000, 50000, 30000, 25000, 10000, 50000]&ndash;&gt;-->
+<!--&lt;!&ndash;        for (let i = 0; i < menu.length; i++) {&ndash;&gt;-->
+<!--&lt;!&ndash;            document.getElementById('menu').innerHTML += (i + 1) + "." + menu[i] + "<br>"&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+<!--&lt;!&ndash;        function chonMon() {&ndash;&gt;-->
+<!--&lt;!&ndash;            let sum=0;&ndash;&gt;-->
+<!--&lt;!&ndash;            let intnum=0&ndash;&gt;-->
+<!--&lt;!&ndash;            do {&ndash;&gt;-->
+<!--&lt;!&ndash;                intnum = parseInt(operator);&ndash;&gt;-->
+<!--&lt;!&ndash;                if (intnum>7){&ndash;&gt;-->
+<!--&lt;!&ndash;                    alert("Món bạn chọn không có trong menu")&ndash;&gt;-->
+<!--&lt;!&ndash;                }else if (intnum == 7) {&ndash;&gt;-->
+<!--&lt;!&ndash;                    alert("Tổng tiền là : "+sum)&ndash;&gt;-->
+<!--&lt;!&ndash;                    break;&ndash;&gt;-->
+<!--&lt;!&ndash;                }else {&ndash;&gt;-->
+<!--&lt;!&ndash;                    for (let i = 0; i < primes.length; i++) {&ndash;&gt;-->
+<!--&lt;!&ndash;                        if (intnum == (i + 1)) {&ndash;&gt;-->
+<!--&lt;!&ndash;                            alert("Giá tiền" + primes[i])&ndash;&gt;-->
+<!--&lt;!&ndash;                            let sl = +prompt("Số lượng muốn mua:")&ndash;&gt;-->
+<!--&lt;!&ndash;                            sum += primes[i] * sl;&ndash;&gt;-->
+<!--&lt;!&ndash;                        }&ndash;&gt;-->
+<!--&lt;!&ndash;                    }&ndash;&gt;-->
+<!--&lt;!&ndash;                }&ndash;&gt;-->
+
+<!--&lt;!&ndash;            } while (intnum <= 7)&ndash;&gt;-->
+<!--&lt;!&ndash;        }&ndash;&gt;-->
+
+
+<!--&lt;!&ndash;&lt;!&ndash;// </script>&ndash;&gt;&ndash;&gt;-->
+
+
+<p id="menu"></p>
+<button type="button" id="click" onclick="chonMon()">CHỌN</button>
+<script>
+    let menu = ["Cafe", "Cam Vắt", "Nước Ép Cà Rốt", "Nước Ép cà chua", "Nước lọc", "Nước Dừa", "thoát gọi món"]
+    let stt = [1, 2, 3, 4, 5, 6, 7]
+    let primes = [45000, 50000, 30000, 25000, 10000, 50000]
+    for (let i = 0; i < menu.length; i++) {
+        document.getElementById('menu').innerHTML += (i + 1) + "." + menu[i] + "<br>"
+    }
+
+    function chonMon() {
+        let sum=0;
+        let intnum=0
+        do {
+            intnum = +prompt("Nhập số bạn chọn")
+            if (intnum>7){
+                alert("Món bạn chọn không có trong menu")
+            }else if (intnum == 7) {
+                alert("Tổng tiền là : "+sum)
+                break;
+            }else {
+                for (let i = 0; i < primes.length; i++) {
+                    if (intnum == (i + 1)) {
+                        alert("Giá tiền" + primes[i])
+                        let sl = +prompt("Số lượng muốn mua:")
+                        sum += primes[i] * sl;
+                    }
+                }
+            }
+
+        } while (intnum <= 7)
+    }
+</script>
+</body>
+</html>

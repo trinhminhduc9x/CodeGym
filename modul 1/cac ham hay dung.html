@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cac cau lenh hay dung</title>
+</head>
+<body>
+<script>
+    let arr = [6, 9, 2, 4, 9]
+    /*Thêm 11 vào cuối mảng*/
+    // arr.push(11);
+
+    /*Xóa 1 phần tử cuối mảng*/
+    // arr.pop();
+
+    /*thêm phần tử đầu mảng*/
+    // arr.unshift(12);
+
+    /*Xóa phần tử đầu mảng*/
+    // arr.shift();
+
+    /*Thêm tại vị trí bất kì
+    * [6,9,2,4]
+    * [6,9,11,2,4]
+    * [11,6,9,2,4]
+    * [6,9,2,11,12,4]
+    * */
+    // arr.splice(2,0,11)
+    // arr.splice(0,0,11);
+    // arr.splice(3, 0, 11, 12)
+
+    /*Xóa tại vị trí bất kì
+    * [6,9,2,4]
+    * [6,2,4]
+    * [6,4]
+    * */
+    // arr.splice(1,1); xoa từ vị trí 1 xoa 1 phần tử
+    // arr.splice(1,2);
+
+    /*Chuyển mảng thành chuỗi*/
+    // document.write(arr.toString()); //6,9,2,4
+    // document.write(arr.join("")); //6924
+    // document.write(arr.join("-")); //6-9-2-4
+
+    /*Hàm đảo mảng*/
+    //[6,9,2,4]
+    //[4,2,9,6]
+    // arr.reverse();
+
+    /*Hàm tìm kiếm*/
+    //[6,9,2,4,9]
+    // let index = arr.indexOf(9); //1
+    // let index = arr.lastIndexOf(9); //4
+    // document.write(index);
+    /*
+    * Nếu x tồn tại trong mảng thì
+    * trả về index đầu tiên của x
+    * Nếu x KHÔNG tồn tại thì trả về -1
+    * */
+
+    /*Kiểm tra có tồn tại x hay không*/
+    // let check = arr.includes(99);
+    // alert(check);//true / false
+
+    /*Hàm sắp xếp*/
+    arr.sort(function (a, b) {
+        // return a - b; //tăng dần
+        return b - a; //giảm dần
+    })
+
+    for (let value of arr) {
+        document.write(value + "<br>")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<script>
+    let arrA=[7,2,5,3,5,3];
+    let arrB=[7,2,5,4,6,3,5,3];
+    let arrC=[];
+    // let a
+    // for (let i = 0; i <arrB.length ; i++) {
+    //     for (let j = 0; j <arrA.length ; j++) {
+    //         if(arrB[i]===arrA[j]){
+    //             arrA[j]="";
+    //             arrB[i]='';
+    //         }
+    //     }
+    // } for (let i = 0; i <arrB.length ; i++) {
+    //     for (let j = 0; j <arrA.length ; j++) {
+    //         if(arrB[i]!==arrA[j]){
+    //             arrC.push(arrB[i])
+    //             arrB[i]=''
+    //             arrA[j]=''
+    //         }
+    //     }
+    // }
+    // document.write(arrC)
+
+    for (let i = 0; i <arrB.length ; i++) {
+        let index=arrA.indexOf(arrB[i])
+        if (index==-1){
+            arrC.push(arrB[i])
+            console.log(arrB[i])
+        }
+    }
+    document.write(arrC)
+</script>
+</body>
+</html>

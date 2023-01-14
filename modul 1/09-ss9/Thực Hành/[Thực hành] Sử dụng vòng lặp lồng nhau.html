@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Practice] Using nested loops</title>
+</head>
+<body>
+<script>
+    let i = 1;
+    let j = 1 ;
+    let table ;
+    table="<table style='box-shadow: 2px 2px2px; background-color: #0433ff ;margin: auto '  border = '2' width = '300' cellspacing = '0' cellpadding= '3'>";
+    for (i=1; i <= 10;i++)
+    {
+        table=table+"<tr>";
+        for (j=1;j<= 10;j++){
+            table=table+"<td style='text-align: center; border: 2 px'  >" + i*j + "</td>";
+        }
+        table=table+"<tr>" ;
+    }
+    table=table+"</table>"
+    document.write(table);
+</script>
+</body>
+</html>

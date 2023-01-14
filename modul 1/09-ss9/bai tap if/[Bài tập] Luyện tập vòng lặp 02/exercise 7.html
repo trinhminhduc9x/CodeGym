@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai tap 7</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt('Input a:'));
+    let b = parseFloat(prompt('Input b:'));
+    let c = parseFloat(prompt('Input c:'));
+    let d = (b*b) - (4*a*c);
+
+    if (d<0){
+        document.write("Vo nghiem");
+    } else if (d>0) {
+        document.write("Nghiem x1 = " + ((-b+ Math.sqrt(d))/(2*a)))
+        document.write("<br>")
+        document.write('Nghiem x2 = ' + ((-b- Math.sqrt(d))/(2*a)))
+    } else {
+        document.write("Nghiem kep = "+ (-b/(2*a)))
+    }
+
+</script>
+</body>
+</html>

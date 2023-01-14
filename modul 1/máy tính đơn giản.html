@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>máy tính đơn giản</title>
+    <style>
+        tr td button {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+<table border="1" cellspacing="20"  cellpadding="0">
+    <tr>
+        <td colspan="4"  style="height: 50px; text-align: right">
+            <span id="result"></span>
+        </td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="calBasic('1')">1</button></td>
+        <td><button type="button" onclick="calBasic('2')">2</button></td>
+        <td><button type="button" onclick="calBasic('3')">3</button></td>
+        <td><button type="button" onclick="calBasic('+')">+</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="calBasic('4')">4</button></td>
+        <td><button type="button" onclick="calBasic('5')">5</button></td>
+        <td><button type="button" onclick="calBasic('6')">6</button></td>
+        <td><button type="button" onclick="calBasic('-')">-</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="calBasic('7')">7</button></td>
+        <td><button type="button" onclick="calBasic('8')">8</button></td>
+        <td><button type="button" onclick="calBasic('9')">9</button></td>
+        <td><button type="button" onclick="calBasic('X')">X</button></td>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="calBasic('C')">C</button></td>
+        <td><button type="button" onclick="calBasic('0')">0</button></td>
+        <td><button type="button" onclick="calBasic('=')">=</button></td>
+        <td><button type="button" onclick="calBasic('/')">/</button></td>
+    </tr>
+
+</table>
+
+<script>
+    function calBasic(operator) {
+        console.log(operator);
+        /*Lấy giá trị ô kết quả*/
+        let result = document.getElementById("result").innerText;
+        switch (operator) {
+            /*nhóm 1 - noi chuoi*/
+            case '0':
+            case '1':
+            case '2':
+            case '3':
+            case '4':
+            case '5':
+            case '6':
+            case '7':
+            case '8':
+            case '9':
+            case '+':
+            case '-':
+            case 'X':
+            case '/':
+                result = result + operator;
+                break;
+            /*Nhóm xóa kết quả*/
+            case 'C':
+                result = "";
+                break;
+            /*Nhóm xử lý kết quả*/
+            case '=':
+                result = eval(result); //eval hàm tính toán
+                break;
+        }
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

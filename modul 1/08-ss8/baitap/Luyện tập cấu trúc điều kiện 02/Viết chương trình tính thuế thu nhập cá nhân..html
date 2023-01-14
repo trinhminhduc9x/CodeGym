@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện.</title>
+</head>
+<body>
+<h1>
+   thue thu nhap ca nhan
+</h1>
+<table>
+    <tr>
+        <th>
+            <input type="number" max="1000" min="0" id="tienDien">
+        </th>
+        <th>
+            <button type="button" onclick="tinhToan()"> so tien thue phai nop</button>
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <p id="ketqua" > 0</p>
+        </th>
+        <th>
+            <p>
+                ket qua o day
+            </p>
+        </th>
+    </tr>
+    <tr>
+        <p>
+            tren 300 tr tang tien thue len  20 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 200 tr tang tien thue len 15 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 100 ngan tang tien thue len 10 %
+        </p>
+    </tr>
+    <tr>
+        <p>
+            tren 60 tr tang tien thue len 5 %
+        </p>
+    </tr>
+</table>
+<script>
+    function tinhToan() {
+        let hoahong = document.getElementById("tienDien").value;
+        let ketqua;
+        if (hoahong>300){
+            ketqua= (parseFloat(hoahong*20/100) );
+        }else if (hoahong>200) {
+            ketqua = (parseFloat(hoahong*15/100) );;
+        } else  if ( hoahong> 100){
+            ketqua=(parseFloat(hoahong*1/10) );
+        } else  if ( hoahong> 60){
+            ketqua=(parseFloat(hoahong*5/100) );
+        } else {
+            ketqua=hoahong;
+        }
+        document.getElementById("ketqua").innerText = parseFloat(ketqua);
+
+    }
+</script>
+</body>
+</html>

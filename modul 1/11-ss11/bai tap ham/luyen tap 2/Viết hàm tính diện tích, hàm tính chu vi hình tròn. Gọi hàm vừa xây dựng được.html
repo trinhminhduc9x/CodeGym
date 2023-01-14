@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 2</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            nhập bán kính hình tròn
+        </td>
+        <td>
+            <input type="number" id="radius" >
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="check_area()" >
+                tính diện tích </button>
+        </th>
+        <th>
+            <input id="area">
+        </th>
+    </tr>
+    <tr>
+        <th>
+            <button type="button" onclick="check_perimeter()" >
+                Tính chu vi </button>
+        </th>
+        <th>
+            <input id="perimeter">
+        </th>
+    </tr>
+</table>
+<script>
+function check_area() {
+    let radius = document.getElementById("radius").value;
+    let area = Math.pow(parseInt(radius),2)* 3.14  ;
+document.getElementById("area").value= "Diện tích là  "+ area;
+ }
+function check_perimeter() {
+    let radius = document.getElementById("radius").value;
+    let perimete = 2*parseInt(radius)* 3.14 ;
+    document.getElementById("perimeter").value= "Chu vi là  "+ perimete;
+}
+</script>
+</body>
+</html>

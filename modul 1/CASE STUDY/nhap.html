@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 3</title>
+</head>
+<body>
+
+<script>
+    // let arrA =[1,5,6,13,9,12,8,0,5,1];
+    // let arrB =[];
+    // let arrC =[]
+    // let n1 = 0;
+    // let n2 = 1;
+    // let n3 = n1+n2;
+    // // let number = parseInt(prompt(" nhap so lan muon in ra"));
+    // for ( let i =0 ;i<10;i++)
+    // {
+    //     if(i==0||i==1) {
+    //         arrB[i]=i;
+    //     } else {
+    //         arrB[i]=n3;
+    //         n1=n2;
+    //         n2=n3;
+    //         n3=n1+n2;
+    //     }
+    // }
+    // for (let i = 0; i <arrA.length ; i++) {
+    //     let index=arrB.indexOf(arrA[i])
+    //     if (index!==-1){
+    //         arrC.push(arrA[i])
+    //     }
+    //
+    // }
+    // arrC.sort(function (a,b) {
+    //     return a-b;
+    // })
+    // for (let value of arrA){
+    //
+    // }
+    // document.write( arrA);
+    // document.write("<br> "+ arrB);
+    //  document.write("<br> "+arrC);
+
+    let arrA =[1,5,6,13,9,12,8,0,5,1,20,89,100];
+    arrA.sort(function (a,b) {
+        return a-b;
+    })
+    for (let value of arrA){
+    }
+    console.log(arrA)
+    let A= arrA[arrA.length-1];
+    let arrB =[];
+    let arrC =[]
+    let n1 = 0;
+    let n2 = 1;
+    let n3 = n1+n2;
+    // let number = parseInt(prompt(" nhap so lan muon in ra"));
+    for (  let i =0 ;i<A;i++)
+    {
+        if(i===0||i===1) {
+            arrB[i]=i;
+        } else if (n3<A) {
+            arrB[i]=n3;
+            n1=n2;
+            n2=n3;
+            n3=n1+n2;
+        }
+    }
+    for (let i = 0; i <arrA.length ; i++) {
+        let index=arrB.indexOf(arrA[i])
+        if (index!==-1){
+            arrC.push(arrA[i])
+        }
+    }
+    console.log(arrC)
+    arrC.sort(function (a,b) {
+        return a-b;
+    })
+    for (let value of arrA){
+    }
+    document.write(arrA);
+    document.write("<br> "+ arrB);
+    document.write("<br> "+arrC);
+</script>
+</body>
+</html>

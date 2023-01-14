@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai 4</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            Nhập ký tự vào
+        </td>
+        <td>
+            <input type="text" id="text">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button type="button" onclick="check_result()" > Kiểm tra ký tự</button>
+        </td>
+        <td>
+            <p id="result">  </p>
+        </td>
+    </tr>
+
+</table>
+<script>
+ function check_result() {
+     let number = document.getElementById("text").value;
+    if (number%number==0){
+        document.getElementById("result").innerText= " true";
+    }else {
+        document.getElementById("result").innerText= " false";
+    }
+ }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhap</title>
+    <style>
+        body {padding-top:50px}
+    </style>
+</head>
+<body>
+<script>
+    let str = prompt("nhập vào 1 chuỗi");
+    let arrStr = str.split("");
+    let newArr = []
+    //Vinh
+    for (let i = 0; i < arrStr.length; i++)
+    {
+        if (arrStr[i] === arrStr[i].toUpperCase())
+        {
+            newArr.push(arrStr[i].toLowerCase())
+        } else if (arrStr[i] === arrStr[i].toLowerCase())
+        {
+            newArr.push(arrStr[i].toUpperCase())
+        } else {
+            newArr.push(arrStr[i])
+        }
+    }
+    newArr = newArr.join("");
+    alert(newArr)
+</script>
+</body>
+</html>
