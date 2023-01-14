@@ -1,0 +1,12 @@
+body {
+  background-image: url("https://wallpaperaccess.com/full/2412896.jpg");
+}
+table {
+  border: solid 3px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}

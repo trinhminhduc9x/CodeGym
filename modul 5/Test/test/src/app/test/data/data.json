@@ -1,0 +1,174 @@
+{
+  "product": [
+    {
+      "name": "dien thoai1",
+      "manufacture": "Han Quoc",
+      "price": "1000",
+      "priceNumber": "vnd",
+      "id": 1
+    },
+    {
+      "name": "dien thoai2",
+      "manufacture": "Han Quoc2",
+      "price": "2000",
+      "priceNumber": "vnd",
+      "id": 2
+    },
+    {
+      "name": "dien thoai3",
+      "manufacture": "Han Quoc3",
+      "price": "3000",
+      "priceNumber": "vnd",
+      "id": 3
+    },
+    {
+      "name": "dien thoai4",
+      "manufacture": "Han Quoc4",
+      "price": "10004",
+      "priceNumber": "vnd4",
+      "id": 4
+    },
+    {
+      "name": "dien thoai5",
+      "manufacture": "Han Quoc5",
+      "price": "5000",
+      "priceNumber": "vnd",
+      "id": 5
+    }
+  ],
+  "category": [
+    {
+      "id": 2,
+      "product": {
+        "name": "dien thoai2",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 6,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "id": 5,
+      "product": {
+        "name": "dien thoai5",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 6,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "id": 6,
+      "product": {
+        "name": "dien thoai6",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 7,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "id": 8,
+      "product": {
+        "name": "dien thoai7",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 9,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "id": 9,
+      "product": {
+        "name": "dien thoai8",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 6,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "id": 10,
+      "product": {
+        "name": "dien thoai9",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "number": 6,
+      "productDay": "10-10-2022",
+      "startDay": "10-10-2022",
+      "endDay": "10-10-2022"
+    },
+    {
+      "number": 6,
+      "productDay": "2023-01-28",
+      "startDay": "2023-01-27",
+      "endDay": "2023-01-15",
+      "id": 11
+    },
+    {
+      "number": 3,
+      "productDay": "2023-01-29",
+      "startDay": "2023-01-29",
+      "endDay": "2023-01-29",
+      "id": 12
+    },
+    {
+      "number": 234,
+      "productDay": "2023-01-30",
+      "startDay": "2023-01-30",
+      "endDay": "2023-01-30",
+      "id": 13
+    },
+    {
+      "number": 3,
+      "productDay": "2023-01-29",
+      "startDay": "2023-01-29",
+      "endDay": "2023-01-29",
+      "product": {
+        "name": "dien thoai1",
+        "manufacture": "Han Quoc",
+        "price": "1000",
+        "priceNumber": "vnd",
+        "id": 1
+      },
+      "id": 14
+    },
+    {
+      "number": 6999,
+      "productDay": "2022-12-31",
+      "startDay": "2023-01-21",
+      "endDay": "2023-01-21",
+      "product": {
+        "name": "dien thoai3",
+        "manufacture": "Han Quoc3",
+        "price": "3000",
+        "priceNumber": "vnd",
+        "id": 3
+      },
+      "id": 15
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+<h1>Xoá danh mục sản phẩm</h1>
+<form [formGroup]="categoryForm" (ngSubmit)="deleteCategory(id)">
+  <table>
+    <tr hidden>
+      <td>Mã danh mục:</td>
+      <td><label>
+        <input type="number" formControlName="id">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Tên danh mục:</td>
+      <td><label>
+        <input type="text" formControlName="name">
+      </label></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button type="submit">Xoá</button></td>
+    </tr>
+  </table>
+</form>

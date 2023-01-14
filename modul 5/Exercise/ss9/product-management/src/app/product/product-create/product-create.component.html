@@ -1,0 +1,42 @@
+<h1>Tạo sản phẩm mới</h1>
+<button><a routerLink="/product/list">Quay lại trang danh sách</a></button>
+<form [formGroup]="productForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Mã sản phẩm:</td>
+      <td><label>
+        <input type="number" formControlName="id">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Tên sản phẩm:</td>
+      <td><label>
+        <input type="text" formControlName="name">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Giá sản phẩm</td>
+      <td><label>
+        <input type="number" formControlName="price">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Mô tả về sản phẩm</td>
+      <td><label>
+        <input type="text" formControlName="description">
+      </label></td>
+    </tr>
+    <tr>
+      <td>Danh mục</td>
+      <td><label>
+        <select formControlName="category">
+          <option *ngFor="let item of categories" [ngValue]="item">{{item.name}}</option>
+        </select>
+      </label></td>
+    </tr>
+    <tr>
+      <td><button type="reset">Tạo lại</button></td>
+      <td><button>Tạo mới</button></td>
+    </tr>
+  </table>
+</form>

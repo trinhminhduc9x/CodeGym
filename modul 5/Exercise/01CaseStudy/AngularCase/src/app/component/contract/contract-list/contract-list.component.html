@@ -1,0 +1,67 @@
+<!-- nút them moi thành viên hiện -->
+<td>
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#view">
+ them moi
+  </button>
+</td>
+
+<div style="text-align: center; font-size: 14px; background-image: linear-gradient(to top right, #EB9FC0, #B83F8F, #2C2867);height: 90vh; overflow:hidden ">
+
+  <!--hiện thị danh sách đối tượng-->
+  <table class="table table-hover" style="background-color: #E2F0EB4D">
+    <thead>
+    <tr class="table" style="background-color: #E2F0EB4D">
+      <th scope="col">#</th>
+      <th scope="col">Ngày bắt đầu hợp đồng</th>
+      <th scope="col">Ngày kết thúc hợp đồng</th>
+      <th scope="col">Tiền Đặt Cọc</th>
+      <th scope="col">Tên Khách Hàng</th>
+      <th scope="col">Tên Nhân Viên</th>
+      <th scope="col">Tên Dịch Vụ</th>
+      <th scope="col">Thêm mới hợp đồng chi tiết </th>
+      <th scope="col">Xem dịch vụ</th>
+      <th scope="col">Thêm dịch vụ đi kèm</th>
+    </tr>
+    </thead>
+    <tbody>
+
+
+    <tr class="table-table-hover"  style="background-color: #E2F0EB4D"  *ngFor="let contract of contractList" >
+
+      <th scope="row" >{{contractList.indexOf(contract) + 1}}</th>
+      <td> {{contract.startDate}}</td>
+      <td >{{contract.endDate}}</td>
+      <td >{{contract.deposit}}</td>
+      <td >{{contract.customer?.name}}</td>
+      <td >{{contract.employee?.name}}</td>
+      <td >{{contract.facility?.name}}</td>
+
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<app-footer></app-footer>
+<!-- Modal thêm con -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <label for="name">name</label>
+        <input type="text" id="name"><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="save">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

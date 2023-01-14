@@ -1,0 +1,42 @@
+<div
+  style="text-align: center; font-size: 14px; background-image: linear-gradient(to top right, #EB9FC0, #B83F8F, #2C2867);height: 100vh; overflow:hidden ">
+  <!--hiện thị danh sách đối tượng-->
+  <div class="container-fluid">
+    <div class="row">
+      <div style="text-align: center; font-size: 14px">
+        <table class="table table-info table-striped" style="width: 100%">
+          <thead>
+          <tr class="table-primary">
+            <th scope="col">#</th>
+            <th scope="col">Tên Khánh Hàng</th>
+            <th scope="col">Ngày sinh</th>
+            <th scope="col">Giới Tính</th>
+            <th scope="col">Số chứng minh nhân dân</th>
+            <th scope="col">Số điện thoại</th>
+            <th scope="col">email</th>
+            <th scope="col">Quê quán</th>
+            <th scope="col">Xem dịch vụ</th>
+            <th scope="col">Thêm dịch vụ</th>
+            <th scope="col" style="text-align: center">Edit</th>
+            <th scope="col" style="text-align: center">Delete</th>
+          </tr>
+          </thead>
+          <tbody>
+          <!-- code để nhận list đang có-->
+          <tr class="table-light" *ngFor="let iteam of customerList">
+
+            <th scope="row">{{customerList.indexOf(iteam) + 1}}</th>
+            <td>{{iteam.name}}</td>
+            <td>{{iteam.dateOfBirth}}</td>
+            <td>{{iteam.gender}}</td>
+            <td>{{iteam.idCard}}</td>
+            <td>{{iteam.phoneNumber}}</td>
+            <td>{{iteam.email}}</td>
+            <td>{{iteam.address}}</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

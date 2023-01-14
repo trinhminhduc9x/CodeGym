@@ -1,0 +1,83 @@
+{
+  "product": [
+    {
+      "name": "",
+      "price": "",
+      "description": "",
+      "category": "",
+      "id": 1
+    },
+    {
+      "name": "Trinh Minh Duc",
+      "price": "1000",
+      "description": "asdf",
+      "category": {
+        "id": 1,
+        "name": "some comment1"
+      },
+      "id": 2
+    },
+    {
+      "id": 4,
+      "name": "json-server",
+      "price": "typicode",
+      "description": "typicode",
+      "category": {
+        "id": 1,
+        "name": "some comment4"
+      }
+    },
+    {
+      "id": 5,
+      "name": "json-server",
+      "price": "typicode",
+      "description": "typicode",
+      "category": {
+        "id": 1,
+        "name": "some comment5"
+      }
+    },
+    {
+      "name": "ádfads",
+      "price": "d111111",
+      "description": "ádfgdfg",
+      "category": {
+        "id": 2,
+        "name": "some comment2"
+      },
+      "id": 9
+    },
+    {
+      "name": "Trinh Minh Duc",
+      "price": "1000",
+      "description": "asdf",
+      "category": {
+        "id": 3,
+        "name": "some comment3"
+      },
+      "id": 10
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "some comment1"
+    },
+    {
+      "id": 2,
+      "name": "some comment2"
+    },
+    {
+      "id": 3,
+      "name": "some comment3"
+    },
+    {
+      "id": 4,
+      "name": "some comment4"
+    },
+    {
+      "id": 5,
+      "name": "some comment5"
+    }
+  ]
+}

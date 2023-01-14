@@ -1,0 +1,86 @@
+<div class="mx-5 px-5 pt-3 pb-5">
+  <h2 class="text-center fw-bold text-light">CHỈNH SỬA KHÁCH HÀNG</h2>
+
+  <p class="text-center">
+    <a routerLink=""><i class="fa-solid fa-backward"></i> Quay lại trang danh sách khách hàng</a>
+  </p>
+
+  <div class="d-flex justify-content-center">
+    <form class="w-50 border border-2 border-success p-3 rounded formCSS" novalidate="novalidate"
+          [formGroup]="productFormGroup" (ngSubmit)="update(categoryId)">
+      <div class="form-group">
+        <label for="name" class="h6">Name:</label>
+
+        <div class="input-group">
+          <input type="text"
+                 id="name"
+                 class="form-control"
+                 placeholder="Input name"
+                 formControlName="name"
+                 required
+                 title="Tên không được chứa số và các kí tự đầu tiên của mỗi từ phải viết hoa.">
+          <span class="input-group-text"><i class="fa-solid fa-person-circle-question"></i></span>
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="productFormGroup.controls.name.hasError('required') &&
+                      productFormGroup.controls.name.touched">
+          Tên không được để trống!
+        </div>
+
+      </div>
+
+      <div class="mt-3 form-group">
+        <label for="price" class="h6">price:</label>
+        <div class="input-group">
+
+          <input type="text" id="price"
+                 class="form-control"
+                 placeholder="priced"
+                 formControlName="price"
+                 required
+                 title="phải nhập sô tiền phù hợp dạng XXXXXX">
+          <span class="input-group-text"><i class="fa-solid fa-id-card"></i></span>
+        </div>
+        <div class="alert alert-danger"
+             role="alert"
+             *ngIf="productFormGroup.controls.price.hasError('required') &&
+                      productFormGroup.controls.price.touched">
+          price của khách hàng không được để trống!
+        </div>
+      </div>
+
+      <div class="mt-3 form-group">
+        <label for="description" class="h6">description:</label>
+
+        <div class="input-group">
+          <input type="text" id="description" class="form-control" placeholder="Input Phone number"
+                 formControlName="description"
+                 required
+                 title="nhập nhận xét">
+          <span class="input-group-text"><i class="fa-solid fa-square-phone"></i></span>
+        </div>
+        <div class="alert alert-danger"
+             role="alert"
+             *ngIf="productFormGroup.controls.description.hasError('required') &&
+                      productFormGroup.controls.description.touched">
+          description không được để trống!
+        </div>
+      </div>
+
+      <div class="input-group">
+        <select id="category"
+                class="form-select"
+                formControlName="category" [compareWith]="compareWithId">
+          <option value="" disabled>Chọn ..</option>
+          <option *ngFor="let item of categoryList" [ngValue]="item">{{item.name}}</option>
+        </select>
+      </div>
+
+      <div class="mt-3 text-center">
+        <button class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark">
+          -- Save <i class="fa-solid fa-floppy-disk"></i> --
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

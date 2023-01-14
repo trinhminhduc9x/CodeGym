@@ -1,0 +1,8 @@
+<div *ngIf="student!= null; else noContent">
+  <p>{{student.id}}</p>
+  <p>{{student.name}}</p>
+  <p>{{student.point}}</p>
+</div>
+<ng-template #noContent>Không có dữ liệu</ng-template>
+
+

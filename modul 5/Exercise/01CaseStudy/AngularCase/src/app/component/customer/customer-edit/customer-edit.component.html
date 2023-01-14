@@ -1,0 +1,108 @@
+
+<div class="container d-flex justify-content-md-center mb-5"
+     style="text-align: center; font-size: 14px; background-image: linear-gradient(to top right, #EB9FC0, #B83F8F, #2C2867);height: 300vh; overflow:hidden ">
+  <div class="row">
+    <div class="col bg-light info">
+      <form  >
+        <fieldset>
+          <legend style="text-align: center"></legend>
+          <table [formGroup]="fomReactive" (ngSubmit)="save()" >
+            <tr>
+              <td>Tên Khách Hàng
+              </td>
+              <td>
+                <span style="color: red" *ngIf="fomReactive.controls.name.hasError('required')
+  && fomReactive.controls.name.touched">
+    cmnd khong duoc de trong</span>
+                <input formControlName="name">
+              </td>
+            </tr>
+            <tr>
+              <td>Ngày sinh
+              </td>
+              <td>
+                <label>ngay sinh:</label><br>
+                <input type="date"><br>
+              </td>
+            </tr>
+            <tr>
+              <td>Giới tính
+              </td>
+              <td>
+                <input type="radio" id="nam" value="nam" name="name" formControlName="name">
+                <label for="nam">nam</label>
+                <input type="radio" id="nu" value="nu" name="name" formControlName="name">
+                <label for="nam">nu</label>
+                <input type="radio" id="khac" value="khac" name="name" formControlName="name">
+                <label for="nam">khac</label><br>
+              </td>
+            </tr>
+            <tr>
+              <td>số chứng minh nhân dân
+              </td>
+              <td>
+            <span style="color: red" *ngIf="fomReactive.controls.idCard.hasError('required')
+  && fomReactive.controls.idCard.touched">
+    cmnd khong duoc de trong</span>
+                <span style="color: red" *ngIf="fomReactive.controls.idCard.hasError('pattern')">
+    cmnd khong dung dinh dang</span>
+                <input formControlName="idCard">
+              </td>
+            </tr>
+            <tr>
+              <td>số điện thoại
+              </td>
+              <td>
+  <span style="color: red" *ngIf="fomReactive.controls.phoneNumber.hasError('required')
+  && fomReactive.controls.phoneNumber.touched">
+    so dien thoai khong duoc de trong</span>
+                <span style="color: red" *ngIf="fomReactive.controls.phoneNumber.hasError('pattern')">
+    so dien thoai khong dung dinh dang</span>
+                <input formControlName="phoneNumber">
+              </td>
+            </tr>
+            <tr>
+              <td>email
+              </td>
+              <td>
+  <span style="color: red" *ngIf="fomReactive.controls.email.hasError('required')
+  && fomReactive.controls.email.touched">
+    email khong duoc de trong</span>
+                <span style="color: red" *ngIf="fomReactive.controls.email.hasError('email')">
+    email khong dung dinh dang</span>
+                <input formControlName="email">
+              </td>
+            </tr>
+            <tr>
+              <td> địa chỉ
+              </td>
+              <td>
+            <span style="color: red" *ngIf="fomReactive.controls.address.hasError('required')
+  && fomReactive.controls.address.touched">
+    dia chi khong duoc de trong</span>
+                <input formControlName="address">
+
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Kiểu Khách Hàng
+              </td>
+              <td>
+       <span style="color: red" *ngIf="fomReactive.controls.address.hasError('required')
+  && fomReactive.controls.address.touched">
+    Kiểu Khách Hàng khong duoc de trong</span>
+                <input formControlName="address">
+
+              </td>
+            </tr>
+            <tr>
+              <td><input type="reset" value="Clear"></td>
+              <td><input type="submit" value="submit" class=" btn-success"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>

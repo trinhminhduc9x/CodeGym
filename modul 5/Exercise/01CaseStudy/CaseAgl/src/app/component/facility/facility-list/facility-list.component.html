@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+  <title>Title</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</head>
+<body>
+<!--hiện thị danh sách đối tượng-->
+<div class="container-fluid">
+  <div class="row">
+    <div style="text-align: center; font-size: 14px">
+      <table class="table table-info table-striped" style="width: 100%">
+        <thead>
+        <tr class="table-primary">
+          <th scope="col">#</th>
+          <th scope="col">Tên Dịch Vụ</th>
+          <th scope="col">Diện Tích Phòng</th>
+          <th scope="col">Giá cả </th>
+          <th scope="col">Số người tối đa</th>
+          <th scope="col">Loại phòng </th>
+          <th scope="col">Tiện lợi khác</th>
+          <th scope="col">Diện tích hồ bơi</th>
+          <th scope="col">Số tầng</th>
+          <th scope="col">Dịch vụ miễn phí</th>
+          <th scope="col">Kiểu dịch vụ</th>
+          <th scope="col">Kiểu thuê</th>
+          <th scope="col">Xem dịch vụ</th>
+          <th scope="col">Thêm dịch vụ</th>
+          <th scope="col" style="text-align: center">Edit</th>
+          <th scope="col" style="text-align: center">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- code để nhận list đang có-->
+        <tr class="table-light" *ngFor >
+
+          <th scope="row" th:text="${loop.count}"></th>
+          <td th:text="${iteam.name}"></td>
+          <td th:text="${iteam.area}"></td>
+          <td th:text="${iteam.cost}"></td>
+          <td th:text="${iteam.maxPeople}"></td>
+          <td th:text="${iteam.standardRoom}"></td>
+          <td th:text="${iteam.descriptionOtherConvenience}"></td>
+          <td th:text="${iteam.poolArea}"></td>
+          <td th:text="${iteam.numberOfFloors}"></td>
+          <td th:text="${iteam.facilityFree}"></td>
+          <td th:text="${iteam.facilityType.name}"></td>
+          <td th:text="${iteam.rentType.name}"></td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</body>
+</html>

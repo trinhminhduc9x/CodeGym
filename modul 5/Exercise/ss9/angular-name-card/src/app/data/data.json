@@ -1,0 +1,39 @@
+{
+  "todos": [
+    {
+      "id": 2,
+      "content": "case task 1",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "content": "case task 2",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "content": "case task 3",
+      "complete": true
+    },
+    {
+      "id": 5,
+      "content": "case task 4",
+      "complete": false
+    },
+    {
+      "content": "task 5",
+      "complete": false,
+      "id": 6
+    },
+    {
+      "content": "task 6",
+      "complete": false,
+      "id": 7
+    },
+    {
+      "content": "task 7",
+      "complete": false,
+      "id": 8
+    }
+  ]
+}

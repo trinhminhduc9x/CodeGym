@@ -1,0 +1,16 @@
+<h1>Product Edit</h1>
+<hr>
+<form [formGroup]="rfProductEdit" (ngSubmit)="editProduct()">
+
+  <pre>Id:           <input disabled type="text" formControlName="id"></pre>
+  <pre>Name:         <input type="text" formControlName="name"></pre>
+  <pre>Price:        <input type="text" formControlName="price"></pre>
+  <pre>Product Type:  <select formControlName="category">
+    <option *ngFor="let x of categoryList" [ngValue]="x">{{x.name}}</option>
+  </select></pre>
+  <pre>Description:  <input type="text" formControlName="description"></pre>
+
+
+
+  <button type="submit">Edit</button>
+</form>

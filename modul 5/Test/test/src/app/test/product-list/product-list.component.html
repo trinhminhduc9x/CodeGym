@@ -1,0 +1,169 @@
+<div class="p-3 px-5">
+
+  <h2 class="text-center fw-bold mt-3">
+    DANH SÁCH <i class="fa-solid fa-person-circle-question"></i></h2>
+
+  <!--  chức năng thêm mới-->
+
+  <nav class="navbar navbar-expand-lg py-0 my-0">
+    <div class="container-fluid">
+      <a routerLink="/create">
+        <button class="btn btn-primary btn-outline-secondary">
+          <span class="fa-solid fa-person-circle-plus text-light h5 my-auto me-1"></span>
+          <span class="text-light">Nhập hàng</span>
+        </button>
+      </a>
+
+      <!--      chức năng tìm kiếm-->
+
+      <div class="d-flex my-2" role="search">
+        <input class="form-control me-2" type="text" placeholder="Nhập tên.." aria-label="Search"
+               [(ngModel)]="productNameSearch">
+        <input class="form-control me-2" type="date" placeholder="Nhập ngày kết thúc.." aria-label="Search"
+               [(ngModel)]="endDaySearch">
+
+
+        <button class="btn btn-light btn-outline-primary" (click)="searchByMore()">
+          <i class="fa-solid fa-magnifying-glass">Search</i></button>
+
+
+      </div>
+    </div>
+  </nav>
+
+  <!--  hiện thị bảng-->
+
+
+  <table class="table table-light table-striped table-bordered" id="customerTable">
+    <thead>
+    <tr class="table-dark text-light">
+      <th class="text-center">STT</th>
+      <th class="text-center">Mã lô hàng</th>
+      <th class="text-center">Tên sản phẩm</th>
+      <th class="text-center">Giá tiền</th>
+      <th class="text-center">Đơn vị</th>
+      <th class="text-center">Ngày nhập hàng</th>
+      <th class="text-center">Ngày sản xuất</th>
+      <th class="text-center">Ngày hết hạn</th>
+
+      <th class="text-center">Sửa</th>
+      <th class="text-center">Xóa</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let item of categoryListPaging; index as i">
+      <td class="text-center">{{i + 1 + (curPage - 1) * 5 }}</td>
+      <td>LH-000{{item.id}}</td>
+      <td>{{item.product?.name}}</td>
+      <td>{{item.product?.price}}</td>
+      <td>{{item.product?.priceNumber}}</td>
+      <td>{{item.number}}</td>
+      <td>{{item.productDay}}</td>
+      <td>{{item.startDay}}</td>
+      <td>{{item.endDay}}</td>
+<!--      <td>{{item.category?.name}}</td>-->
+
+
+
+
+      <!--      nút EDIT-->
+
+      <td class="text-center">
+        <a routerLink="/edit/{{item.id}}">
+          <button class="btn btn-success btn-outline-secondary btn-sm">
+            <span class="fa-solid fa-user-pen text-light h6 m-auto px-2">edit</span>
+          </button>
+        </a>
+      </td>
+
+      <!--      nút xóa-->
+
+      <td class="text-center">
+        <button type="button" (click)="temp = item" data-bs-toggle="modal" data-bs-target="#deleteModal">delete
+        </button>
+      </td>
+
+
+    </tr>
+    </tbody>
+  </table>
+
+  <!--  phân trang -->
+
+  <nav aria-label="..." class="justify-content-center d-flex">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" (click)="previos()" *ngIf="curPage > 1">&laquo; Trang trước</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curPage <= 1">
+        <a class="page-link">&laquo;</a>
+      </li>
+
+      <li class="page-item"><a class="page-link disabled" href=""
+                               [text]="curPage + '/' + totalPage" *ngIf="curPage <= totalPage"></a>
+      </li>
+
+      <li class="page-item">
+        <a class="page-link" (click)="next()" *ngIf="curPage < totalPage">Trang sau &raquo;</a>
+      </li>
+      <li class="page-item disabled" *ngIf="curPage >= totalPage">
+        <a class="page-link">&raquo;</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<!--modal hiện thị xóa-->
+
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Bạn có muốn xoá sản phẩm <span>{{temp.product?.name}}</span>
+        Bạn có muốn xoá sản phẩm ngày sản xuất <span>{{temp.productDay}}</span>
+      </div>
+      <div class="modal-footer">
+        <form>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" (click)="delete(temp.id)" data-bs-dismiss="modal">
+            Delete
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal xem chi tiết từng đối tượng-->
+
+
+<!--<div class="modal fade " id="view" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true"-->
+<!--     style="color: #0000ff">-->
+<!--  <div class="modal-dialog ">-->
+<!--    <div class="modal-content bg-white">-->
+<!--      <div class="modal-header">-->
+<!--        <h5 class="modal-title" id="exampleModalLabel1">Bảng chi tiết</h5>-->
+<!--        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">-->
+<!--          <span aria-hidden="true">&times;</span>-->
+<!--        </button>-->
+<!--      </div>-->
+<!--      <div class="modal-body">-->
+<!--        Tên sản phẩm: <span>{{tempProduct.name}}</span>-->
+<!--        <br><br>-->
+<!--        Giá sản phẩm: <span>{{tempProduct.price}}</span>-->
+<!--        <br><br>-->
+<!--        Nhận định sản phẩm: <span>{{tempProduct.description}}</span>-->
+<!--        <br><br>-->
+<!--        Nhà sản xuất: <span>{{tempProduct.category?.name}}</span>-->
+<!--        <br><br>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+

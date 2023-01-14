@@ -1,0 +1,122 @@
+<div class="mx-5 px-5 pt-3">
+  <h2 class="text-center fw-bold">Add new Customer</h2>
+
+  <p class="text-center mt-3"><a href="/"><i class="fa-solid fa-house-chimney h5 mx-1"></i> Back to HOME</a></p>
+
+  <p class="text-center">
+    <a routerLink="/customer/list"><i class="fa-solid fa-backward"></i> Back to Customer list</a>
+  </p>
+
+  <div class="d-flex justify-content-center">
+
+    <form class="w-50 border border-2 border-success p-3 rounded formCSS" novalidate="novalidate"
+          [formGroup]="categoryFormGroup" (ngSubmit)="submit()">
+
+
+      <div class="input-group">
+        <select id="product"
+                class="form-select"
+                formControlName="product" [compareWith]="compareWithId">
+          <option value="" disabled>Chọn tên..</option>
+          <option *ngFor="let item of productList" [ngValue]="item">{{item.name}}</option>
+        </select>
+      </div>
+
+
+
+      <div class="form-group">
+        <label for="number"
+               class="h6">số lượng:</label>
+
+        <div class="input-group">
+          <input type="number"
+                 id="number"
+                 class="form-control"
+                 placeholder="Input number"
+                 formControlName="number"
+                 required
+                 title="nhập số">
+          <span class="input-group-text"><i class="fa-solid fa-person-circle-question"></i></span>
+        </div>
+        <div class="alert alert-danger" role="alert"
+             *ngIf="categoryFormGroup.controls.number.hasError('required') &&
+                      categoryFormGroup.controls.number.touched">
+          số lượng không được để trống!
+        </div>
+
+      </div>
+
+      <div class="mt-3 form-group">
+        <label for="productDay"
+               class="h6">ngày nhập hàng :</label>
+        <div class="input-group">
+
+          <input type="date"
+                 id="productDay"
+                 class="form-control"
+                 placeholder="productDay"
+                 formControlName="productDay"
+                 required
+                 title="phải nhập ngày phù hợp">
+          <span class="input-group-text"><i class="fa-solid fa-id-card"></i></span>
+        </div>
+        <div class="alert alert-danger"
+             role="alert"
+             *ngIf="categoryFormGroup.controls.productDay.hasError('required') &&
+                      categoryFormGroup.controls.productDay.touched">
+          productDay của khách hàng không được để trống!
+        </div>
+      </div>
+
+      <div class="mt-3 form-group">
+        <label for="startDay" class="h6">startDay:</label>
+
+        <div class="input-group">
+          <input type="date"
+                 id="startDay"
+                 class="form-control"
+                 placeholder="Input startDayr"
+                 formControlName="startDay"
+                 required
+                 title="nhập startDay">
+          <span class="input-group-text"><i class="fa-solid fa-square-phone"></i></span>
+        </div>
+        <div class="alert alert-danger"
+             role="alert"
+             *ngIf="categoryFormGroup.controls.startDay.hasError('required') &&
+                      categoryFormGroup.controls.startDay.touched">
+          startDay không được để trống!
+        </div>
+      </div>
+
+      <div class="mt-3 form-group">
+        <label for="endDay"
+               class="h6">ngày lấy hàng :</label>
+        <div class="input-group">
+
+          <input type="date"
+                 id="endDay"
+                 class="form-control"
+                 placeholder="endDay"
+                 formControlName="endDay"
+                 required
+                 title="phải nhập ngày phù hợp">
+          <span class="input-group-text"><i class="fa-solid fa-id-card"></i></span>
+        </div>
+        <div class="alert alert-danger"
+             role="alert"
+             *ngIf="categoryFormGroup.controls.endDay.hasError('required') &&
+                      categoryFormGroup.controls.endDay.touched">
+          endDay của khách hàng không được để trống!
+        </div>
+      </div>
+
+
+      <div class="mt-3 text-center">
+        <button class="btn btn-info btn-outline-success btn-sm border border-2 border-success text-dark">
+          -- Save <i class="fa-solid fa-floppy-disk"></i> --
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

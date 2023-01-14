@@ -1,0 +1,37 @@
+<button routerLink="/student/create">Create student</button>
+<button (click)="showPageCreate()">Create student</button>
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Date of birth</th>
+    <th>Point</th>
+    <th>Rank</th>
+    <th>Info</th>
+    <th>Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let item of students">
+    <td>{{item.id}}</td>
+    <td>{{item.name | slice: 0:4 | titlecase}}...</td>
+    <td>{{item.dateOfBirth | date: "dd/MM/yyyy"}}</td>
+    <td>{{item.point}}</td>
+    <td>
+      <div *ngIf="item.point>=0 && item.point <=10; else other">
+        <span *ngIf="item.point< 8">Not good</span>
+        <span *ngIf="item.point>=8 && item.point<9">Good</span>
+        <span *ngIf="item.point>=9 && item.point<=10">Very good</span>
+      </div>
+      <ng-template #other>Không hợp lệ</ng-template>
+    </td>
+    <td><button type="button" [routerLink]="['/student/detail',item.id,item.name]">Info</button></td>
+    <td><button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="temp = item">Delete</button></td>
+<!--    <td><button type="button" (click)="showInfo(item.id)">Info</button></td>-->
+  </tr>
+  </tbody>
+</table>
+<app-student-delete [student]="temp"></app-student-delete>
+<!--<app-student-info [student]="temp"></app-student-info>-->
+<!--<app-student-create (eventCreate)="saveStudent($event)"></app-student-create>-->

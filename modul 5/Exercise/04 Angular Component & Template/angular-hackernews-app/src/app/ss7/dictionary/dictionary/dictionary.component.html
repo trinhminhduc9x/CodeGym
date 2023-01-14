@@ -1,0 +1,12 @@
+<h1>Dictionary List</h1>
+<hr>
+<table border="1">
+  <tr>
+    <th>#</th>
+    <th>Word</th>
+  </tr>
+  <tr *ngFor="let x of dictionarList, let i = index" [routerLink]="['/view',i + 1]">
+    <td>{{i + 1}}</td>
+    <td>{{x.word}}</td>
+  </tr>
+</table>

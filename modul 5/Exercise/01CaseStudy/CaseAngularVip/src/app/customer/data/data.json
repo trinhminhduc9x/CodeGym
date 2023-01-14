@@ -1,0 +1,40 @@
+{
+  "customerTypes": [
+    {
+      "id": 1,
+      "customerTypeName": "Diamond"
+    },
+    {
+      "id": 1,
+      "customerTypeName": "Platinium"
+    },
+    {
+      "id": 1,
+      "customerTypeName": "Gold"
+    },
+    {
+      "id": 1,
+      "customerTypeName": "Silver"
+    },
+    {
+      "id": 1,
+      "customerTypeName": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 4,
+      "customerName": "Nguyễn Thị Hào4",
+      "customerBirthday": "1999-04-08",
+      "customerGender": "0",
+      "customerIdCard": "965656433",
+      "customerPhone": "0763212345",
+      "customerEmail": "haohao99@gmail.com",
+      "customerAddress": "55 Nguyễn Văn Linh, Kon Tum",
+      "customerType": {
+        "id": 1,
+        "customerTypeName": "Diamond"
+      }
+    }
+  ]
+}

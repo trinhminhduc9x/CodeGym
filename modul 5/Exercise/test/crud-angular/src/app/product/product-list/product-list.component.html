@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>price</th>
+    <th>description</th>
+    <th>category</th>
+    <td>edit</td>
+    <td>delete</td>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let product of productList">
+    <td scope="row">{{product.id}}</td>
+    <td scope="row">{{product.name}}</td>
+    <td scope="row">{{product.price}}</td>
+    <td scope="row">{{product.description}}</td>
+    <td scope="row">{{product.category.name}}</td>
+    <td><a [routerLink]="['/product/productEdit',product.id]">edit</a></td>
+    <td><button type="button" (click)="temp = product" data-bs-toggle="modal" data-bs-target="#deleteModal">delete</button></td>
+  </tr>
+  </tbody>
+</table>
+<app-product-delete [product]="temp" (eventDelete)="reload()"></app-product-delete>
+<a routerLink="/product/productCreate">Tạo mới sản phẩm</a>

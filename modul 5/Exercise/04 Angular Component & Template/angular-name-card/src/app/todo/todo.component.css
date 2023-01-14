@@ -1,0 +1,14 @@
+.hover .col-lg-8:hover, .do-task {
+  background: rgba(229, 157, 48, 0.38);
+}
+.hover .col-lg-8 {
+  display: flex;
+  align-items: center;
+}
+
+.do-task p {
+  text-decoration: line-through;
+}
+.heading {
+  font-family: sans-serif;
+}

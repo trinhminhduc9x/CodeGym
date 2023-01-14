@@ -1,0 +1,33 @@
+<h1>Quản Lý Sản Phẩm</h1>
+<button>
+  <a style="text-decoration: none" routerLink="/productCreate">Create</a>
+</button>
+<hr>
+<table border="1">
+  <tr>
+    <th>#</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Description</th>
+    <th>Edit</th>
+    <th>Delete</th>
+  </tr>
+  <tr *ngFor="let x of productList, let i = index">
+    <td>{{i + 1}}</td>
+    <td>{{x.name}}</td>
+    <td>{{x.price}}</td>
+    <td>{{x.category.name}}</td>
+    <td>{{x.description}}</td>
+    <td>
+      <button>
+        <a [routerLink]="['/productEdit',x.id]">Edit</a>
+      </button>
+    </td>
+    <td>
+      <button>
+        <a [routerLink]="['/productDelete',x.id]">Delete</a>
+      </button>
+    </td>
+  </tr>
+</table>

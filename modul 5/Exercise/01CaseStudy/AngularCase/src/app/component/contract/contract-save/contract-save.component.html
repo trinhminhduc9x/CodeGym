@@ -1,0 +1,102 @@
+<app-header></app-header>
+<div class="d-flex justify-content-center">
+  <div class="col-6">
+    <!--            ----------Tiêu đề------------>
+    <div class="my-5"><h1>Thêm mới hợp đồng</h1></div>
+    <form class="my-5" [formGroup]="contractForm" (ngSubmit)="submitContract()">
+      <!--            ----------Form bắt đầu------------>
+      <div class="form-group">
+        <label for="startDate">Ngày bắt đầu</label>
+        <input type="date" class="form-control" id="startDate" formControlName="startDate" min="1920-01-01">
+        <div class="text-danger"
+             *ngIf="contractForm.controls.startDate.invalid && contractForm.controls.startDate.touched else elseBlock">
+          <span *ngIf="contractForm.controls.startDate.hasError('required')">Không được để trống</span>
+          <span *ngIf="contractForm.controls.startDate.hasError('pattern')">Không đúng định dạng</span>
+          <span *ngIf="contractForm.hasError('endDateAfterStartDate')">Ngày kết thúc không được trước ngày bắt đầu</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Ngày kết thúc------------>
+      <div class="form-group">
+        <label for="endDate">Ngày kết thúc</label>
+        <input type="date" class="form-control" id="endDate" formControlName="endDate" min="1920-01-01">
+        <div class="text-danger"
+             *ngIf="contractForm.controls.endDate.invalid && contractForm.controls.endDate.touched else elseBlock">
+          <span *ngIf="contractForm.controls.endDate.hasError('required')">Không được để trống</span>
+          <span *ngIf="contractForm.controls.endDate.hasError('pattern')">Không đúng định dạng</span>
+          <span *ngIf="contractForm.hasError('endDateAfterStartDate')">Ngày kết thúc không được trước ngày bắt đầu</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Thêm tiền đặt cọc------------>
+      <div class="form-group">
+        <label for="deposit">Đặt cọc</label>
+        <input type="text" class="form-control" id="deposit" formControlName="deposit"
+               placeholder="Đặt cọc không nhỏ hơn 0">
+        <div class="text-danger"
+             *ngIf="contractForm.controls.deposit.invalid && contractForm.controls.deposit.touched else elseBlock">
+          <span *ngIf="contractForm.controls.deposit.hasError('required')">Không được để trống</span>
+          <span *ngIf="contractForm.controls.deposit.hasError('pattern')">Không đúng định dạng</span>
+          <span *ngIf="contractForm.hasError('min')">Không được nhỏ hơn không</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Thêm khách hàng thuê dịch vụ------------>
+      <div class="form-group">
+        <label for="customerId">Khách hàng thuê dịch vụ</label>
+        <select class="form-select" aria-label="Default select example" id="customerId"
+                formControlName="customer">
+          <option class="defaultSelect">---Chọn---</option>
+        </select>
+        <div class="text-danger"
+             *ngIf="contractForm.controls.customer.invalid && contractForm.controls.customer.touched else elseBlock">
+          <span *ngIf="contractForm.controls.customer.hasError('required')">Không được để trống</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Thêm dịch vụ------------>
+      <div class="form-group">
+        <label for="facility">Dịch vụ</label>
+        <select class="form-select" aria-label="Default select example" id="facility"
+                formControlName="facility">
+          <option class="defaultSelect">---Chọn---</option>
+        </select>
+        <div class="text-danger"
+             *ngIf="contractForm.controls.facility.invalid && contractForm.controls.facility.touched else elseBlock">
+          <span *ngIf="contractForm.controls.facility.hasError('required')">Không được để trống</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Thêm nhân viên------------>
+      <div class="form-group">
+        <label for="employee">Nhân viên</label>
+        <select class="form-select" aria-label="Default select example" id="employee"
+                formControlName="employee" onmouseover="disappear()">
+          <option class="defaultSelect">---Chọn---</option>
+        </select>
+        <div class="text-danger"
+             *ngIf="contractForm.controls.employee.invalid && contractForm.controls.employee.touched else elseBlock">
+          <span *ngIf="contractForm.controls.employee.hasError('required')">Không được để trống</span>
+        </div>
+        <ng-template #elseBlock><br></ng-template>
+      </div>
+      <!--            ----------Nút tuỳ chọn------------>
+      <div class="form-group d-flex align-items-center justify-content-center" style="margin-top: 25px">
+        <a href="@{/customer}" style="text-decoration: none; width: 30%"
+           class="form-control btn btn-outline-info mx-5">
+          Hủy
+        </a>
+        <button style="width: 30%" type="submit" class="btn btn-outline-success mx-5">
+          Lưu
+        </button>
+      </div>
+      <div class="form-group d-flex align-items-center justify-content-center" style="margin-top: 25px">
+        <button style="width: 30%" type="button" class="form-control btn btn-outline-info mx-5"
+                id="formInput13">
+          <a href="/" style="text-decoration: none; color: #0dcaf0">Trang chủ</a>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

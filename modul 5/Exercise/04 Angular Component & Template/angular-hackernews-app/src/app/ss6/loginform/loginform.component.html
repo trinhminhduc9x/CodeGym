@@ -1,0 +1,18 @@
+<form [formGroup]="login" (ngSubmit)="save()">
+  <label>Tai khoan:</label>
+  <span style="color: red" *ngIf="login.controls.userName.hasError('required')
+  && login.controls.userName.touched">
+    userName khong duoc de trong</span>
+  <span style="color: red" *ngIf="login.controls.userName.hasError('email')">email ko duoc dinh danh</span>
+  <input formControlName="userName">
+  <label>Mat Khau:</label>
+  <span style="color: red" *ngIf="login.controls.passWord.hasError('required')
+  && login.controls.passWord.touched">
+     userName khong duoc de trong</span>
+  <span style="color: red" *ngIf="login.controls.id.hasError('minlength')">
+    passWord khong duoc ngan hon 5 ky tu</span>
+  <span style="color: red" *ngIf="login.controls.id.hasError('maxlength')">
+    passWord khong duoc qua 50 ky tu</span>
+  <input formControlName="login">
+  <button type="submit">luu</button>
+</form>

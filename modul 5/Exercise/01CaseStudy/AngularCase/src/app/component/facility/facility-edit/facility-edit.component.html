@@ -1,0 +1,135 @@
+<div class="container d-flex justify-content-md-center mb-5"
+     style="text-align: center; font-size: 14px; background-image: linear-gradient(to top right, #EB9FC0, #B83F8F, #2C2867);height: 300vh; overflow:hidden ">
+  <div class="row">
+    <div class="col bg-light info">
+      <form [formGroup]="facilityForm" (ngSubmit)="submitFacility()">
+        <fieldset>
+          <legend style="text-align: center"></legend>
+          <table>
+
+
+
+            <tr>
+              <div class="form-group">
+                <label for="name">Tên dịch vụ</label>
+                <input type="text" class="form-control" id="name" formControlName="name" placeholder="Tên gồm chứ và số. Vd: Abc123">
+              </div>
+            </tr>
+
+            <!--  diện tích-->
+            <tr>
+              <div class="form-group">
+                <label for="area">Diện tích</label>
+                <input type="text" class="form-control" id="area" formControlName="area" placeholder="Diện tích phải lớn hơn không">
+              </div>
+              <div class="text-danger"
+                   *ngIf="facilityForm.controls.area.invalid && facilityForm.controls.area.touched else elseBlock">
+                <span *ngIf="facilityForm.controls.area.hasError('required')">Không được để trống</span>
+                <span *ngIf="facilityForm.controls.area.hasError('pattern')">Không đúng định dạng</span>
+                <span *ngIf="facilityForm.controls.area.hasError('min')">Không được nhỏ hơn không</span>
+
+              </div>
+              <ng-template #elseBlock><br></ng-template>
+            </tr>
+            <!--  giá cả-->
+            <tr>
+              <div class="form-group">
+                <label for="cost">Giá</label>
+                <input type="text" class="form-control" id="cost" formControlName="cost" placeholder="Giá dịch vụ phải lớn hơn không">
+              </div>
+              <div class="text-danger"
+                   *ngIf="facilityForm.controls.cost.invalid && facilityForm.controls.cost.touched else elseBlock">
+                <span *ngIf="facilityForm.controls.cost.hasError('required')">Không được để trống</span>
+                <span *ngIf="facilityForm.controls.cost.hasError('pattern')">Không đúng định dạng</span>
+                <span *ngIf="facilityForm.controls.cost.hasError('min')">Không được nhỏ hơn không</span>
+              </div>
+              <ng-template #elseBlock><br></ng-template>
+            </tr>
+            <!--  Số người tôi đa-->
+            <tr>
+              <div class="form-group">
+                <label for="maxPeople">Số người tôi đa</label>
+                <input type="text" class="form-control" id="maxPeople" formControlName="maxPeople"
+                       placeholder="Số người phải lớn hơn không">
+              </div>
+              <div class="text-danger"
+                   *ngIf="facilityForm.controls.maxPeople.invalid && facilityForm.controls.maxPeople.touched else elseBlock">
+                <span *ngIf="facilityForm.controls.maxPeople.hasError('required')">Không được để trống</span>
+                <span *ngIf="facilityForm.controls.maxPeople.hasError('pattern')">Không đúng định dạng</span>
+                <span *ngIf="facilityForm.controls.maxPeople.hasError('min')">Không được nhỏ hơn không</span>
+              </div>
+              <ng-template #elseBlock><br></ng-template>
+            </tr>
+            <tr id="opt1" style="display: none">
+              <div class="form-group">
+                <label for="standardRoom">Tiêu chuẩn phòng</label>
+                <select class="form-select hideDefaultSelect" id="standardRoom" formControlName="standardRoom">
+                  <option class="defaultSelect" value="">Hãy chọn tiêu chuẩn</option>
+                  <option value="Vip">Vip</option>
+                  <option value="Normal">Normal</option>
+                </select>
+              </div>
+            </tr>
+            <tr id="opt4" style="display: none">
+              <div class="form-group">
+                <label for="descriptionOtherConvenience">Mô tả tiện ích khác</label>
+                <input type="text" class="form-control" id="descriptionOtherConvenience" formControlName="descriptionOtherConvenience">
+              </div>
+            </tr>
+            <tr id="opt2" style="display: none">
+              <div class="form-group poolArea">
+                <label for="poolArea">Diện tích hồ bơi</label>
+                <input type="text" class="form-control" id="poolArea" formControlName="poolArea"
+                       placeholder="Diện tích hồ bơi phải lớn hơn không">
+              </div>
+            </tr>
+            <tr id="opt3" style="display: none">
+              <div class="form-group numberOfFloor">
+                <label for="numberOfFloor">Số tầng</label>
+                <input type="text" class="form-control" id="numberOfFloor" formControlName="numberOfFloor"
+                       placeholder="Số tầng phải lớn hơn không">
+              </div>
+            </tr>
+            <tr id="opt5" style="display: none">
+              <div class="form-group facilityFree">
+                <label for="facilityFree">Dịch vụ miễn phí</label>
+                <input type="text" class="form-control" id="facilityFree" formControlName="facilityFree">
+              </div>
+            </tr>
+            <tr>
+              <div class="form-group">
+                <label for="facilityType">Loại dịch vụ</label>
+                <select class="form-select hideDefaultSelect" id="facilityType" formControlName="facilityType">
+                  <option class="defaultSelect" value="">Hãy chọn loại dịch vụ</option>
+                </select>
+              </div>
+              <div class="text-danger"
+                   *ngIf="facilityForm.controls.facilityType.invalid && facilityForm.controls.facilityType.touched else elseBlock">
+                <span *ngIf="facilityForm.controls.facilityType.hasError('required')">Không được để trống</span>
+              </div>
+              <ng-template #elseBlock><br></ng-template>
+            </tr>
+            <tr>
+              <div class="form-group">
+                <label for="rentType">Kiểu thuê</label>
+                <select class="form-select hideDefaultSelect" id="rentType" formControlName="rentType">
+                  <option class="defaultSelect" value="">Hãy chọn kiểu thuê</option>
+                </select>
+              </div>
+              <div class="text-danger"
+                   *ngIf="facilityForm.controls.rentType.invalid && facilityForm.controls.rentType.touched else elseBlock">
+                <span *ngIf="facilityForm.controls.rentType.hasError('required')">Không được để trống</span>
+                <span *ngIf="facilityForm.controls.rentType.hasError('pattern')">Không đúng định dạng</span>
+              </div>
+              <ng-template #elseBlock><br></ng-template>
+            <tr>
+              <td><input type="reset" value="Clear"></td>
+              <td><input type="submit" value="submit" class=" btn-success"></td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+

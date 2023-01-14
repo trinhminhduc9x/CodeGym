@@ -1,0 +1,17 @@
+<table border="1">
+  <tr>
+    <td colspan="5"><input type="number" placeholder="First number" [(ngModel)]="first_number"/></td>
+  </tr>
+
+  <tr>
+    <td colspan="5"><input type="number" placeholder="Second number" [(ngModel)]="second_number"></td>
+  </tr>
+  <tr>
+    <td>Operator</td>
+    <td><button (click)="addition()">+</button></td>
+    <td><button (click)="subtraction()">-</button></td>
+    <td><button (click)="multiplication()">*</button></td>
+    <td><button (click)="division()">/</button></td>
+  </tr>
+</table>
+<p>Result : {{result}}</p>

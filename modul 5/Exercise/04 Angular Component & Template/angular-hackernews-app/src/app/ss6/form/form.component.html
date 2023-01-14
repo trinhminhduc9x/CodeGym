@@ -1,0 +1,41 @@
+<form [formGroup]="fomReactive" (ngSubmit)="saveForm()">
+  <label>ID :</label>
+  <span style="color: red" *ngIf="fomReactive.controls.id.hasError('required')">
+    ID khong duoc de trong</span>
+  <span style="color: red" *ngIf="fomReactive.controls.id.hasError('minlength')">
+    ID khong duoc ngan hon 5 ky tu</span>
+  <span style="color: red" *ngIf="fomReactive.controls.id.hasError('maxlength')">
+    ID khong duoc qua 50 ky tu</span>
+  <input formControlName="id">
+  <label>gioi tinh:</label>
+  <input type="radio" id="nam" value="nam" name="name" formControlName="name">
+  <label for="nam">nam</label>
+  <input type="radio" id="nu" value="nu" name="name" formControlName="name">
+  <label for="nam">nu</label>
+  <input type="radio" id="khac" value="khac" name="name" formControlName="name">
+  <label for="nam">khac</label><br>
+  <label>ngay sinh:</label><br>
+  <input type="date"><br>
+
+  <label>so cmnd</label><br>
+  <span style="color: red" *ngIf="fomReactive.controls.idCard.hasError('required')
+  && fomReactive.controls.idCard.touched">
+    cmnd khong duoc de trong</span>
+  <span style="color: red" *ngIf="fomReactive.controls.idCard.hasError('pattern')">
+    cmnd khong dung dinh dang</span>
+
+  <label>so dien thoai</label><br>
+  <span style="color: red" *ngIf="fomReactive.controls.phoneNumber.hasError('required')
+  && fomReactive.controls.phoneNumber.touched">
+    so dien thoai khong duoc de trong</span>
+  <span style="color: red" *ngIf="fomReactive.controls.phoneNumber.hasError('pattern')">
+    so dien thoai khong dung dinh dang</span>
+
+  <label>dia chi</label><br>
+  <span style="color: red" *ngIf="fomReactive.controls.address.hasError('required')
+  && fomReactive.controls.address.touched">
+    dia chi khong duoc de trong</span>
+  <input formControlName="address">
+
+  <button type="submit">luu</button>
+</form>

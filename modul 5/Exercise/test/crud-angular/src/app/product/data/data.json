@@ -1,0 +1,88 @@
+{
+  "product": [
+    {
+      "id": 3,
+      "name": "adsa",
+      "price": 11111111,
+      "description": "sda",
+      "category": {
+        "id": 3,
+        "name": "Oppo2"
+      }
+    },
+    {
+      "id": 4,
+      "name": "ẻ",
+      "price": 32,
+      "description": "df",
+      "category": {
+        "id": 3,
+        "name": "Oppo2"
+      }
+    },
+    {
+      "id": 5,
+      "name": "dfs",
+      "price": 1232,
+      "description": "3ds",
+      "category": {
+        "id": 2,
+        "name": "Vivo"
+      }
+    },
+    {
+      "id": 6,
+      "name": "fd",
+      "price": 321132,
+      "description": "dfs",
+      "category": {
+        "id": 1,
+        "name": "Iphone"
+      }
+    },
+    {
+      "id": 123,
+      "name": "asdddd",
+      "price": 1234,
+      "description": "asdfsdf",
+      "category": {
+        "id": 3,
+        "name": "LG"
+      }
+    },
+    {
+      "id": 111,
+      "name": "1111",
+      "price": 111,
+      "description": "1111",
+      "category": {
+        "id": 2,
+        "name": "Samsung"
+      }
+    },
+    {
+      "id": 2222,
+      "name": "2222",
+      "price": 2222,
+      "description": "222",
+      "category": {
+        "id": 2,
+        "name": "Samsung"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Iphone"
+    },
+    {
+      "id": 2,
+      "name": "Vivo"
+    },
+    {
+      "id": 3,
+      "name": "Oppo2"
+    }
+  ]
+}

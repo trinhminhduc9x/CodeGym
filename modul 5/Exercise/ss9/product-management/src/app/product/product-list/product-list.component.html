@@ -1,0 +1,25 @@
+<h1>Danh sách sản phẩm</h1>
+<button><a routerLink="/product/create">Thêm mới sản phẩm</a></button>
+<table class="table tab-content">
+  <tr>
+    <td>STT</td>
+    <td>Tên</td>
+    <td>Giá</td>
+    <td>Mô tả</td>
+    <td>Loại sản phẩm</td>
+    <td>Cập nhật</td>
+    <td>Xóa</td>
+  </tr>
+  <tr *ngFor="let product of products; index as i">
+    <td>{{i + 1}}</td>
+    <td>{{product.name}}</td>
+    <td>{{product.price}}</td>
+    <td>{{product.description}}</td>
+    <td>{{product.category?.name}}</td>
+    <td><button class="btn btn-warning"><a [routerLink]="['/product/edit',product.id]">Edit</a></button></td>
+    <!--    <td><button class="btn btn-danger" > <a [routerLink]="['/category/delete',product.id]">Delete</a></button></td>-->
+    <td><button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="temp = product" ><span style="color: black">Delete</span></button>
+  </tr>
+</table>
+<app-product-delete [product]="temp"></app-product-delete>
+

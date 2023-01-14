@@ -1,0 +1,47 @@
+<!--hiện thị danh sách đối tượng-->
+<div class="container-fluid">
+  <div class="row">
+    <div style="text-align: center; font-size: 14px">
+      <table class="table table-info table-striped" style="width: 100%">
+        <thead>
+        <tr class="table-primary">
+          <th scope="col">#</th>
+          <th scope="col">Tên Dịch Vụ</th>
+          <th scope="col">Diện Tích Phòng</th>
+          <th scope="col">Giá cả </th>
+          <th scope="col">Số người tối đa</th>
+          <th scope="col">Loại phòng </th>
+          <th scope="col">Tiện lợi khác</th>
+          <th scope="col">Diện tích hồ bơi</th>
+          <th scope="col">Số tầng</th>
+          <th scope="col">Dịch vụ miễn phí</th>
+          <th scope="col">Kiểu dịch vụ</th>
+          <th scope="col">Kiểu thuê</th>
+          <th scope="col">Xem dịch vụ</th>
+          <th scope="col">Thêm dịch vụ</th>
+          <th scope="col" style="text-align: center">Edit</th>
+          <th scope="col" style="text-align: center">Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- code để nhận list đang có-->
+        <tr class="table-light" *ngFor="let iteam of facilityList">
+
+          <th scope="row" >{{facilityList.indexOf(iteam) + 1}}</th>
+          <td >{{iteam.name}}</td>
+          <td >{{iteam.area}}</td>
+          <td >{{iteam.cost}}</td>
+          <td >{{iteam.maxPeople}}</td>
+          <td >{{iteam.standarRoom}}</td>
+          <td >{{iteam.descriptionOtherConvenience}}</td>
+          <td >{{iteam.poolArea}}</td>
+          <td >{{iteam.numberOfFloors}}</td>
+          <td >{{iteam.facilityFree}}</td>
+          <td >{{iteam.facilityType?.name}}</td>
+          <td >{{iteam.rentType?.name}}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Iphone14",
+      "price": 35000,
+      "description": "New"
+    },
+    {
+      "id": 2,
+      "name": "Iphone13",
+      "price": 25000,
+      "description": "97%"
+    },
+    {
+      "id": 3,
+      "name": "Iphone122",
+      "price": 14000,
+      "description": "99%"
+    },
+    {
+      "id": 4,
+      "name": "Iphone102",
+      "price": 123123,
+      "description": "New like",
+      "category": {
+        "id": 2,
+        "name": "Made in Việt Nam"
+      }
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Made in China"
+    },
+    {
+      "id": 2,
+      "name": "Made in Việt Nam"
+    },
+    {
+      "id": 3,
+      "name": "Made in USD"
+    }
+  ]
+}
