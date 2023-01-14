@@ -1,0 +1,5 @@
+1, "Vũ Kiều Anh", "Hà Nội"
+2, "Nguyễn Minh Quân", "Hà Nội"
+3, "Đặng Huy Hoà", "Đà Nẵng"
+4, "Nguyễn Khánh Tùng", "Hà Nội"
+5, "Nguyễn Khắc Nhật", "Hà Nội"
