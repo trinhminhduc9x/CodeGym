@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f11fa1e8-b3fb-42bf-b6b3-00c475a11ffe" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/classes/java/main/controller/ProductServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/classes/java/main/controller/ProductServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/classes/java/main/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/classes/java/main/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/libs/product-management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/libs/product-management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/java/controller/ProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/java/controller/ProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/java/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/java/repository/impl/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/webapp/error404.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/webapp/error404.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/webapp/view/product/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss11_MVC_model/excercise/src/main/webapp/view/product/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/classes/java/main/Service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/classes/java/main/Service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/classes/java/main/Service/impl/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/classes/java/main/Service/impl/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/classes/java/main/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/classes/java/main/repository/impl/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/libs/user-management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/libs/user-management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/Service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/Service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/Service/impl/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/Service/impl/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/controller/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/controller/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/java/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/java/repository/impl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-management/src/main/webapp/view/user/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/user-management/src/main/webapp/view/user/list.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2CpzCo7DhPYHAWxDSd4VpQE0AaX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ss13_Transaction/exercise" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f11fa1e8-b3fb-42bf-b6b3-00c475a11ffe" name="Changes" comment="" />
+      <created>1659514189182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1659514189182</updated>
+      <workItem from="1659514190557" duration="85000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7707148e-70e2-426a-b0c4-2ab4b63842df" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../ss12_JDBC_CRUD/.idea/ss12_JDBC_CRUD.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_JDBC_CRUD/exercise/.idea/exercise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_JDBC_CRUD/user-management/src/main/webapp/view/user/add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss12_JDBC_CRUD/user-management/src/main/webapp/view/user/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/demo_mvc_c06.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo_jstl_c06/src/main/java/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss12_jdbc/ss12_jdbc/ss12_jdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/.idea/webContexts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/controller/HomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/controller/StudentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/model/ClassCG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/repository/IStudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/repository/impl/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/service/IStudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/classes/java/main/service/impl/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/libs/demo_jstl_c06-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/config/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/controller/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/controller/StudentServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/model/ClassCG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/repository/IStudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/repository/impl/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/service/IStudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/java/service/impl/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/webapp/view/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/webapp/view/student/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../B_Tap/src/main/webapp/view/student/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_MVC Model/exercise/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/fileContent/fileContent.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/config/FilterUTF8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/controller/HomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/controller/StudentServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/model/ClassCG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/repository/IStudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/repository/impl/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/service/IStudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/classes/java/main/service/impl/StudentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/libs/demo_jstl_c06-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/config/FilterUTF8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/controller/HomeServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/controller/StudentServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/model/ClassCG.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/repository/IStudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/repository/impl/StudentRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/service/IStudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/java/service/impl/StudentService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/error404.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/modal.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/product/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/product/delete.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/product/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/product/update.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_Tap/src/main/webapp/view/product/view.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2FcH2sr6co0psnu8P2pI7wvgIKW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/demo_jstl_c06" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7707148e-70e2-426a-b0c4-2ab4b63842df" name="Changes" comment="" />
+      <created>1664784247584</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664784247584</updated>
+      <workItem from="1664784248834" duration="41000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

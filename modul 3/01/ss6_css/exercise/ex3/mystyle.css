@@ -1,0 +1,121 @@
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+    background-image:
+            /*linear-gradient(0,rgba(255,255,0,0.5),rgba(0,0,225,0)),*/
+            url(https://pdp.edu.vn/wp-content/uploads/2021/06/hinh-anh-naruto-chat-ngau-dep-820x600.jpg);
+    background-size: cover;
+    border:20px darkblue;
+    padding: 10px;
+    box-sizing:border-box;
+    background-origin: padding-box;
+    background-position: center;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#sidebar {
+    background-image: url("https://i.pinimg.com/236x/e1/01/81/e10181c9f1cb1980aa1e7fe1dc3bc2b4.jpg");
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color: #f1f1f1;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.menuitem:hover {
+    background-color: #ffffff;
+}
+
+.menuitem:first-child {
+    background-color:#4CAF50;
+    color: white;
+    font-weight:bold;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    }
+    #main {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }
+}

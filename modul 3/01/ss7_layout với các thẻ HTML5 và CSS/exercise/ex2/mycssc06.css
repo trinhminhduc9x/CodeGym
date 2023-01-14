@@ -1,0 +1,200 @@
+
+#menu{
+    height: 60px;
+    padding:0;
+    margin:0;
+    background-color: #000000;
+    border: 9px solid #000000;
+    position: relative;
+    width: 100%;
+}
+
+#menu ul, #menu li{
+    padding:0;
+    margin:0;
+}
+
+#menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#menu li a{
+    width:100px;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#menu ul ul li a{
+    width: 200px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menu li a:hover{
+    background-color: blue;
+}
+
+#menu ul ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+#menu #aa {
+    background-color: #98effc;
+    position: relative;
+
+}
+#menu #bb {
+    background-color: #323201;
+    position: absolute ;
+    top: 0;
+   left: 0;
+}
+
+.head {
+    background: orange;
+    height: 10%;
+}
+
+.left {
+    background: #0f6674;
+}
+
+.right {
+    background: #0f6674;
+}
+
+.contain {
+    background: #7abaff;
+}
+/**{*/
+/*    margin: 0px;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+html{
+    overflow: hidden;
+}
+
+/*Màn hinh laptop và máy tính bảng*/
+@media only screen and (min-width: 741px)and (max-width: 1240px) {
+    .col-m-1 {
+        width: 8.33333%;
+    }
+
+    .col-m-2 {
+        width: 16.66667%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33333%;
+    }
+
+    .col-m-5 {
+        width: 41.66667%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33333%;
+    }
+
+    .col-m-8 {
+        width: 66.66667%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33333%;
+    }
+
+    .col-m-11 {
+        width: 91.66667%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
+
+/*Màn hình máy tính pc và tivi smart*/
+@media only screen and (min-width: 1241px) {
+    .col-l-1 {
+        width: 8.33333%;
+    }
+
+    .col-l-2 {
+        width: 16.66667%;
+    }
+
+    .col-l-3 {
+        width: 25%;
+    }
+
+    .col-l-4 {
+        width: 33.33333%;
+    }
+
+    .col-l-5 {
+        width: 41.66667%;
+    }
+
+    .col-l-6 {
+        width: 50%;
+    }
+
+    .col-l-7 {
+        width: 58.33333%;
+    }
+
+    .col-l-8 {
+        width: 66.66667%;
+    }
+
+    .col-l-9 {
+        width: 75%;
+    }
+
+    .col-l-10 {
+        width: 83.33333%;
+    }
+
+    .col-l-11 {
+        width: 91.66667%;
+    }
+
+    .col-l-12 {
+        width: 100%;
+    }
+}
+
