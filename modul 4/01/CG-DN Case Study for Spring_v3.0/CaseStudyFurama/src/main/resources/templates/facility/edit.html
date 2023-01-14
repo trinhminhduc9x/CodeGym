@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+<body>
+<div th:replace="~{/layout::navbar}"></div>
+<h3>facility</h3>
+<p>
+    <a th:href="@{/facility/list}">
+        Back to list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/facility/update}" th:object="${facility}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>area</label>
+            <input type="number" th:field="*{area}"/>
+        </div>
+        <div>
+            <label>cost</label>
+            <input type="number" th:field="*{cost}"/>
+        </div>
+        <div>
+            <label>maxPeople</label>
+            <input type="number" th:field="*{maxPeople}"/>
+        </div>
+        <div>
+            <label>standardRoom</label>
+            <input type="number" th:field="*{standardRoom}"/>
+        </div>
+        <div>
+            <label>descriptionOtherConvenience</label>
+            <input type="text" th:field="*{descriptionOtherConvenience}"/>
+        </div>
+        <div>
+            <label>standardRoom</label>
+            <input type="number" th:field="*{poolArea}"/>
+        </div>
+        <div>
+            <label>standardRoom</label>
+            <input type="number" th:field="*{numberOfFloors}"/>
+        </div>
+        <div>
+            <label>standardRoom</label>
+            <input type="text" th:field="*{facilityFree}"/>
+        </div>
+        <div>
+            <label>CustomerType:</label>
+            <select th:field="*{facilityType}">
+                <option th:each="p : ${facilityType}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <div>
+            <label>CustomerType:</label>
+            <select th:field="*{rentType}">
+                <option th:each="p : ${rentTypeL}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

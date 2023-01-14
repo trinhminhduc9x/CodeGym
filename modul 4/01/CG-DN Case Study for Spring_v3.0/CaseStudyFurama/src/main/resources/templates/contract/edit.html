@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+<body>
+<div th:replace="~{/layout::navbar}"></div>
+<h3>CATEGORY</h3>
+<p>
+    <a th:href="@{/contract/list}">
+        Back to blog list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/contract/update}" th:object="${contract}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name</label>
+            <input type="date" th:field="*{startDate}"/>
+        </div>
+        <div>
+            <label>area</label>
+            <input type="date" th:field="*{endDate}"/>
+        </div>
+        <div>
+            <label>cost</label>
+            <input type="number" th:field="*{deposit}"/>
+        </div>
+        <div>
+            <label>customer:</label>
+            <select th:field="*{customer}">
+                <option th:each="p : ${customerList}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <div>
+            <label>employee:</label>
+            <select th:field="*{employee}">
+                <option th:each="p : ${employeeList}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <div>
+            <label>facility:</label>
+            <select th:field="*{facility}">
+                <option th:each="p : ${facilityList}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

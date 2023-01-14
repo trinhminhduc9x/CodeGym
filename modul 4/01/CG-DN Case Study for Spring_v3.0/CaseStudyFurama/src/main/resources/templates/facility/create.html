@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout :: head">
+<body>
+<div th:replace="~{/layout::navbar}"></div>
+<h3>facility</h3>
+<p>
+    <a th:href="@{/facility/list}">
+        Back to list
+    </a>
+</p>
+<div id="form">
+    <form th:action="@{/facility/save}" th:object="${facility}"
+          method="POST" novalidate="novalidate">
+        <input type="hidden" th:field="*{id}"/>
+        <div>
+            <label>Name</label>
+            <input type="text" th:field="*{name}"/>
+        </div>
+        <div>
+            <label>area</label>
+            <input type="number" th:field="*{area}"/>
+        </div>
+        <div>
+            <label>cost</label>
+            <input type="number" th:field="*{cost}"/>
+        </div>
+        <div>
+            <label>maxPeople</label>
+            <input type="number" th:field="*{maxPeople}"/>
+        </div>
+        <div>
+            <label>facilityType:</label>
+            <select th:field="*{facilityType}" onchange="changeForm(this)">
+                <option th:value="${''}">Chose Type..</option>
+                <option th:each="fac : ${facilityTypeList}"
+                        th:value="${fac.id}"
+                        th:text="${fac.name}"></option>
+                </option>
+            </select>
+        </div>
+        <div>
+            <label>CustomerType:</label>
+            <select th:field="*{rentType}">
+                <option th:value="${''}">Chose Type..</option>
+                <option th:each="p : ${rentTypeList}"
+                        th:value="${p.id}"
+                        th:text="${p.name}"></option>
+            </select>
+        </div>
+        <div class="mb-3" id="opt1" style="display: none">
+            <label for="standard" class="form-label fst-italic fw-bold">Room Standard:</label>
+            <select th:field="*{standardRoom}" id="standard" name="standard" class="form-select" aria-label="Default select example">
+                <option value="Normal">normal</option>
+                <option value="Vip">vip</option>
+            </select>
+        </div>
+        <div class="mb-3" id="opt2" style="display: none">
+            <label for="poolArea" class="form-label fst-italic fw-bold">Pool Area:</label>
+            <input th:field="*{poolArea}"  type="number" value="0" name="Pool" class="form-control" id="poolArea" aria-describedby="poolError">
+        </div>
+
+
+        <div class="mb-3" id="opt3" style="display: none">
+            <label for="floors" class="form-label fst-italic fw-bold">Number Of Floors:</label>
+            <input  th:field="*{numberOfFloors}" type="number" value="0" name="floors" class="form-control" id="floors" aria-describedby="floorError">
+        </div>
+        <div class="mb-3" id="opt4" style="display: none">
+            <label for="otherConvenience" class="form-label fst-italic fw-bold">Description Other Convenience:</label>
+            <input  th:field="*{descriptionOtherConvenience}" type="text" name="otherConvenience" class="form-control" id="otherConvenience">
+        </div>
+
+        <div class="mb-3" id="opt5" style="display: none">
+            <label for="freeServiceIncluded" class="form-label fst-italic fw-bold">Free Service Included:</label>
+            <input  th:field="*{facilityFree}" type="text" name="convenience" class="form-control" id="freeServiceIncluded">
+        </div>
+
+
+        <input type="submit" value="Save"/>
+    </form>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+<script>
+    // <%--    thêm value cho thẻ --%>
+    function getIdToDelete(id, name) {
+        document.getElementById("idDelete").value = id;
+        document.getElementById("nameDelete").value = name;
+    }
+    function changeForm(type) {
+        let choseType = type.value;
+        switch (choseType) {
+            case "1":
+                document.getElementById("opt1").style.display = "block";
+                document.getElementById("opt2").style.display = "block";
+                document.getElementById("opt3").style.display = "block";
+                document.getElementById("opt4").style.display = "block";
+                document.getElementById("opt5").style.display = "none";
+                break;
+            case "2":
+                document.getElementById("opt1").style.display = "none";
+                document.getElementById("opt2").style.display = "none";
+                document.getElementById("opt3").style.display = "none";
+                document.getElementById("opt4").style.display = "none";
+                document.getElementById("opt5").style.display = "block";
+                break;
+            case "3":
+                document.getElementById("opt1").style.display = "block";
+                document.getElementById("opt2").style.display = "block";
+                document.getElementById("opt3").style.display = "none";
+                document.getElementById("opt4").style.display = "block";
+                document.getElementById("opt5").style.display = "none";
+                break;
+            default:
+                document.getElementById("opt1").style.display = "block";
+                document.getElementById("opt2").style.display = "block";
+                document.getElementById("opt3").style.display = "block";
+                document.getElementById("opt4").style.display = "block";
+                document.getElementById("opt5").style.display = "block";
+
+        }
+    }
+</script>
+</body>
+</html>
